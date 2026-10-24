@@ -1,0 +1,68 @@
+{
+  "run_id": "traffic_30-semantic-0.93-nofallback-qwen2.5:7b-1792840199",
+  "traffic": "eval/traffic_30.jsonl",
+  "mode": "single-threshold semantic cache",
+  "threshold": 0.93,
+  "guard": true,
+  "fallback": false,
+  "embedder": "BAAI/bge-small-en-v1.5",
+  "model": "qwen2.5:7b",
+  "prompt": "v4",
+  "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "policy_version": "v1",
+  "when": "2026-10-24T11:12:27+00:00",
+  "elapsed_s": 147.35099116596393,
+  "failed": [],
+  "n": 200,
+  "decisions": {
+    "miss": 152,
+    "hit": 32,
+    "miss_entity": 16
+  },
+  "latency_by_decision": {
+    "miss": {
+      "n": 152,
+      "p50": 878.6114999675192,
+      "p95": 1739.5693750528153
+    },
+    "hit": {
+      "n": 32,
+      "p50": 17.57206249749288,
+      "p95": 36.50186056038365
+    },
+    "miss_entity": {
+      "n": 16,
+      "p50": 934.2373954132199,
+      "p95": 2036.9036770425737
+    }
+  },
+  "latency_ms": {
+    "mean": 735.7765839912463,
+    "p50": 805.7630834518932,
+    "p95": 1738.2893750385847
+  },
+  "llm_ms": {
+    "p50": 861.2480209558271,
+    "p95": 1714.7895373753272
+  },
+  "llm_total_s": 141.41284016834106,
+  "wall_total_s": 147.15531679824926,
+  "quality": {
+    "requests": 200,
+    "hits": 32,
+    "hit_rate": 0.16,
+    "false_hits": 0,
+    "false_hit_rate": 0.0,
+    "false_hit_share_of_requests": 0.0,
+    "repeats": 60,
+    "repeat_correct_hits": 32,
+    "repeat_recall": 0.5333333333333333,
+    "false_hit_examples": []
+  },
+  "vs_baseline": {
+    "baseline": "eval/results/m1_baseline_v4_7b_30.json",
+    "wall_saved_s": 26.8181803667685,
+    "llm_saved_s": 32.55405695096124,
+    "note": "separate runs; LLM time varies a little between runs"
+  }
+}

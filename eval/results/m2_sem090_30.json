@@ -1,0 +1,261 @@
+{
+  "run_id": "traffic_30-semantic-0.9-qwen2.5:7b-1792838335",
+  "traffic": "eval/traffic_30.jsonl",
+  "mode": "single-threshold semantic cache",
+  "threshold": 0.9,
+  "embedder": "BAAI/bge-small-en-v1.5",
+  "model": "qwen2.5:7b",
+  "prompt": "v4",
+  "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "policy_version": "v1",
+  "when": "2026-10-24T10:40:51+00:00",
+  "elapsed_s": 115.8821805419866,
+  "failed": [],
+  "n": 200,
+  "decisions": {
+    "miss": 128,
+    "hit": 72
+  },
+  "latency_by_decision": {
+    "miss": {
+      "n": 128,
+      "p50": 934.5040834741667,
+      "p95": 1854.4059102947342
+    },
+    "hit": {
+      "n": 72,
+      "p50": 15.446249977685511,
+      "p95": 66.34424185613173
+    }
+  },
+  "latency_ms": {
+    "mean": 578.4640206146287,
+    "p50": 318.8623544992879,
+    "p95": 1448.893114592646
+  },
+  "llm_ms": {
+    "p50": 894.385437539313,
+    "p95": 1837.123033124952
+  },
+  "llm_total_s": 110.38156108476687,
+  "wall_total_s": 115.69280412292574,
+  "quality": {
+    "requests": 200,
+    "hits": 72,
+    "hit_rate": 0.36,
+    "false_hits": 41,
+    "false_hit_rate": 0.5694444444444444,
+    "false_hit_share_of_requests": 0.205,
+    "repeats": 60,
+    "repeat_correct_hits": 31,
+    "repeat_recall": 0.5166666666666667,
+    "false_hit_examples": [
+      {
+        "id": "t30-022",
+        "asked": "Is a return still possible 35 days after delivery?",
+        "asked_intent": "return_after_days:35",
+        "matched": "Is a return still possible 28 days after delivery?",
+        "matched_intent": "return_after_days:28",
+        "similarity": 0.9322593212127686
+      },
+      {
+        "id": "t30-042",
+        "asked": "Do I pay a restocking fee to return the Trailhead Pack 40L after opening it?",
+        "asked_intent": "restock_of:Trailhead Pack 40L",
+        "matched": "Do I pay a restocking fee to return the Trailhead Pack 65L after opening it?",
+        "matched_intent": "restock_of:Trailhead Pack 65L",
+        "similarity": 0.9705042243003845
+      },
+      {
+        "id": "t30-055",
+        "asked": "Is standard shipping free on a $30 order?",
+        "asked_intent": "free_ship_total:30",
+        "matched": "Is standard shipping free on a $80 order?",
+        "matched_intent": "free_ship_total:80",
+        "similarity": 0.9180740714073181
+      },
+      {
+        "id": "t30-072",
+        "asked": "Is a price adjustment possible 2 days after purchase?",
+        "asked_intent": "price_adj_after:2",
+        "matched": "Can I get a price adjustment 10 days after buying?",
+        "matched_intent": "price_adj_after:10",
+        "similarity": 0.9022611379623413
+      },
+      {
+        "id": "t30-074",
+        "asked": "Is standard shipping free on a $30 order?",
+        "asked_intent": "free_ship_total:30",
+        "matched": "Is standard shipping free on a $80 order?",
+        "matched_intent": "free_ship_total:80",
+        "similarity": 0.9180740714073181
+      },
+      {
+        "id": "t30-078",
+        "asked": "Can I get a price adjustment 30 days after buying?",
+        "asked_intent": "price_adj_after:30",
+        "matched": "Can I get a price adjustment 10 days after buying?",
+        "matched_intent": "price_adj_after:10",
+        "similarity": 0.9177329540252686
+      },
+      {
+        "id": "t30-079",
+        "asked": "Is a return still possible 7 days after delivery?",
+        "asked_intent": "return_after_days:7",
+        "matched": "Is a return still possible 28 days after delivery?",
+        "matched_intent": "return_after_days:28",
+        "similarity": 0.9300718903541565
+      },
+      {
+        "id": "t30-088",
+        "asked": "Can I get a price adjustment 30 days after buying?",
+        "asked_intent": "price_adj_after:30",
+        "matched": "Can I get a price adjustment 10 days after buying?",
+        "matched_intent": "price_adj_after:10",
+        "similarity": 0.9177329540252686
+      },
+      {
+        "id": "t30-091",
+        "asked": "Can I get a price adjustment 20 days after buying?",
+        "asked_intent": "price_adj_after:20",
+        "matched": "Can I get a price adjustment 10 days after buying?",
+        "matched_intent": "price_adj_after:10",
+        "similarity": 0.9080538749694824
+      },
+      {
+        "id": "t30-092",
+        "asked": "What warranty comes with the Trailhead Pack 65L?",
+        "asked_intent": "warranty_of:Trailhead Pack 65L",
+        "matched": "What warranty comes with the Trailhead Pack 40L?",
+        "matched_intent": "warranty_of:Trailhead Pack 40L",
+        "similarity": 0.9239116907119751
+      },
+      {
+        "id": "t30-093",
+        "asked": "Is a return still possible 12 days after delivery?",
+        "asked_intent": "return_after_days:12",
+        "matched": "Is a return still possible 28 days after delivery?",
+        "matched_intent": "return_after_days:28",
+        "similarity": 0.9158552289009094
+      },
+      {
+        "id": "t30-096",
+        "asked": "Is standard shipping free on a $76 order?",
+        "asked_intent": "free_ship_total:76",
+        "matched": "Is standard shipping free on a $80 order?",
+        "matched_intent": "free_ship_total:80",
+        "similarity": 0.9147726893424988
+      },
+      {
+        "id": "t30-101",
+        "asked": "I bought something 20 days ago and the price dropped. Can I get an adjustment?",
+        "asked_intent": "price_adj_after:20",
+        "matched": "I bought something 7 days ago and the price dropped. Can I get an adjustment?",
+        "matched_intent": "price_adj_after:7",
+        "similarity": 0.9221130609512329
+      },
+      {
+        "id": "t30-105",
+        "asked": "Is a return still possible 10 days after delivery?",
+        "asked_intent": "return_after_days:10",
+        "matched": "Is a return still possible 28 days after delivery?",
+        "matched_intent": "return_after_days:28",
+        "similarity": 0.9182199835777283
+      },
+      {
+        "id": "t30-117",
+        "asked": "A parcel arrived 7 days ago. Can I still return an item from it?",
+        "asked_intent": "return_after_days:7",
+        "matched": "A parcel arrived 35 days ago. Can I still return an item from it?",
+        "matched_intent": "return_after_days:35",
+        "similarity": 0.9380812644958496
+      },
+      {
+        "id": "t30-119",
+        "asked": "Is standard shipping free on a $70 order?",
+        "asked_intent": "free_ship_total:70",
+        "matched": "Is standard shipping free on a $80 order?",
+        "matched_intent": "free_ship_total:80",
+        "similarity": 0.9361736178398132
+      },
+      {
+        "id": "t30-121",
+        "asked": "Can I call support on Friday?",
+        "asked_intent": "phone_on_day:Friday",
+        "matched": "Can I call support on Monday?",
+        "matched_intent": "phone_on_day:Monday",
+        "similarity": 0.9161878228187561
+      },
+      {
+        "id": "t30-122",
+        "asked": "Is a return still possible 40 days after delivery?",
+        "asked_intent": "return_after_days:40",
+        "matched": "Is a return still possible 28 days after delivery?",
+        "matched_intent": "return_after_days:28",
+        "similarity": 0.9221912622451782
+      },
+      {
+        "id": "t30-124",
+        "asked": "Do you allow cancelling 30 minutes after checkout?",
+        "asked_intent": "cancel_after:30 minutes",
+        "matched": "Do you allow cancelling 3 hours after checkout?",
+        "matched_intent": "cancel_after:3 hours",
+        "similarity": 0.9098855257034302
+      },
+      {
+        "id": "t30-126",
+        "asked": "When does the store open and close on Wednesday?",
+        "asked_intent": "hours_on_day:Wednesday",
+        "matched": "When does the store open and close on Thursday?",
+        "matched_intent": "hours_on_day:Thursday",
+        "similarity": 0.9180113077163696
+      },
+      {
+        "id": "t30-130",
+        "asked": "Can I get a price adjustment 15 days after buying?",
+        "asked_intent": "price_adj_after:15",
+        "matched": "Can I get a price adjustment 10 days after buying?",
+        "matched_intent": "price_adj_after:10",
+        "similarity": 0.9109146595001221
+      },
+      {
+        "id": "t30-131",
+        "asked": "Does coupon HIKE20 work?",
+        "asked_intent": "promo_code:HIKE20",
+        "matched": "Does coupon TRAIL20 work?",
+        "matched_intent": "promo_code:TRAIL20",
+        "similarity": 0.9275697469711304
+      },
+      {
+        "id": "t30-140",
+        "asked": "How much does the Trailhead Pack 65L cost?",
+        "asked_intent": "price_of:Trailhead Pack 65L",
+        "matched": "SKU of the Trailhead Pack 65L?",
+        "matched_intent": "sku_of:Trailhead Pack 65L",
+        "similarity": 0.9069154858589172
+      },
+      {
+        "id": "t30-144",
+        "asked": "Are you open on December 31?",
+        "asked_intent": "open_on_date:December 31",
+        "matched": "Are you open on December 26?",
+        "matched_intent": "open_on_date:December 26",
+        "similarity": 0.9409667253494263
+      },
+      {
+        "id": "t30-145",
+        "asked": "How can I phone customer support?",
+        "asked_intent": "np:support_phone",
+        "matched": "When can I call customer support?",
+        "matched_intent": "np:support_phone_hours",
+        "similarity": 0.9092931747436523
+      }
+    ]
+  },
+  "vs_baseline": {
+    "baseline": "eval/results/m1_baseline_v4_7b_30.json",
+    "wall_saved_s": 58.280693042092025,
+    "llm_saved_s": 63.58533603453543,
+    "note": "separate runs; LLM time varies a little between runs"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "run_id": "traffic_60-exact-qwen2.5:7b-1792837981",
+  "traffic": "eval/traffic_60.jsonl",
+  "mode": "exact-match cache",
+  "threshold": null,
+  "embedder": null,
+  "model": "qwen2.5:7b",
+  "prompt": "v4",
+  "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "policy_version": "v1",
+  "when": "2026-10-24T10:35:25+00:00",
+  "elapsed_s": 144.04537904204335,
+  "failed": [],
+  "n": 200,
+  "decisions": {
+    "miss": 141,
+    "hit": 59
+  },
+  "latency_by_decision": {
+    "miss": {
+      "n": 141,
+      "p50": 986.6000419715419,
+      "p95": 2046.1126250447705
+    },
+    "hit": {
+      "n": 59,
+      "p50": 0.043584033846855164,
+      "p95": 0.09810000192373979
+    }
+  },
+  "latency_ms": {
+    "mean": 719.0894874959486,
+    "p50": 762.8052284708247,
+    "p95": 1938.008420862023
+  },
+  "llm_ms": {
+    "p50": 986.5127080120146,
+    "p95": 2046.020583016798
+  },
+  "llm_total_s": 143.7949370474089,
+  "wall_total_s": 143.8178974991897,
+  "quality": {
+    "requests": 200,
+    "hits": 59,
+    "hit_rate": 0.295,
+    "false_hits": 0,
+    "false_hit_rate": 0.0,
+    "false_hit_share_of_requests": 0.0,
+    "repeats": 120,
+    "repeat_correct_hits": 59,
+    "repeat_recall": 0.49166666666666664,
+    "false_hit_examples": []
+  },
+  "vs_baseline": {
+    "baseline": "eval/results/m1_baseline_v4_7b_60.json",
+    "wall_saved_s": 32.20270742091816,
+    "llm_saved_s": 32.22135994548444,
+    "note": "separate runs; LLM time varies a little between runs"
+  }
+}

@@ -1,0 +1,47 @@
+{"id": "P-01", "question": "How many days do I have to return an unused item?", "answerable": true, "expect": [["30"]], "split": "dev"}
+{"id": "P-02", "question": "Is the store open on Thanksgiving Day?", "answerable": true, "expect": [["closed", "not open", "re:^no\\b"]], "split": "dev"}
+{"id": "P-03", "question": "Does coupon TRAIL20 work?", "answerable": true, "expect": [["20 percent", "20%"]], "split": "dev"}
+{"id": "P-04", "question": "Do you allow cancelling 15 minutes after checkout?", "answerable": true, "expect": [["yes", "1 hour"]], "split": "dev"}
+{"id": "P-05", "question": "What is the tax on $200 of goods bought in the store?", "answerable": true, "expect": [["11"]], "split": "dev"}
+{"id": "P-06", "question": "Can I buy a $600 gift card?", "answerable": true, "expect": [["500", "re:^no\\b"]], "split": "test"}
+{"id": "P-07", "question": "Do you ship to Mexico?", "answerable": true, "expect": [["canada", "re:^no\\b"]], "split": "dev"}
+{"id": "P-08", "question": "What time does the store close on December 24?", "answerable": true, "expect": [["4 pm", "4:00"]], "split": "dev"}
+{"id": "P-09", "question": "How much is the Summit Tent 4P?", "answerable": true, "expect": [["499"]], "split": "dev"}
+{"id": "P-10", "question": "What is the SKU for the Beacon Headlamp?", "answerable": true, "expect": [["BH-1"]], "split": "test"}
+{"id": "P-11", "question": "How long is the warranty on the Compass GPS Watch?", "answerable": true, "expect": [["2 years", "two years"]], "split": "dev"}
+{"id": "P-12", "question": "Is standard shipping free on a $80 order?", "answerable": true, "expect": [["yes"]], "split": "test"}
+{"id": "P-13", "question": "Is standard shipping free on a $60 order?", "answerable": true, "expect": [["6.95", "not free", "isn't free", "over $75", "re:^no\\b"]], "split": "test"}
+{"id": "P-14", "question": "If I order at 1 pm Eastern, does it ship today?", "answerable": true, "expect": [["yes"]], "split": "dev"}
+{"id": "P-15", "question": "If I order at 5 pm Eastern, does it ship today?", "answerable": true, "expect": [["2 pm", "re:^no\\b"]], "split": "dev"}
+{"id": "P-16", "question": "Can I return a sleeping bag I washed?", "answerable": true, "expect": [["cannot", "can't", "not be returned", "not returnable", "re:^no\\b"]], "split": "dev"}
+{"id": "P-17", "question": "Is there a restocking fee on the Summit Tent 4P?", "answerable": true, "expect": [["15 percent", "15%"]], "split": "dev"}
+{"id": "P-18", "question": "Is there a restocking fee on the Beacon Headlamp?", "answerable": true, "expect": [["only", "summit", "no restocking", "re:^no\\b"]], "split": "test"}
+{"id": "P-19", "question": "What is the phone number for support?", "answerable": true, "expect": [["207-555-0142"]], "split": "test"}
+{"id": "P-20", "question": "Can I pay cash in the store?", "answerable": true, "expect": [["yes"]], "split": "test"}
+{"id": "P-21", "question": "Do you take checks?", "answerable": true, "expect": [["do not", "don't", "not accept", "cannot", "re:^no\\b"]], "split": "test"}
+{"id": "P-22", "question": "How many Trail Club points does a $150 purchase earn?", "answerable": true, "expect": [["150"]], "split": "dev"}
+{"id": "P-23", "question": "How many points do I need for a $10 reward?", "answerable": true, "expect": [["500"]], "split": "dev"}
+{"id": "P-24", "question": "How long does standard shipping to Canada take?", "answerable": true, "expect": [["8 to 12", "8-12", "8 and 12"]], "split": "dev"}
+{"id": "P-25", "question": "What does an order number look like?", "answerable": true, "expect": [["FO-", "six digits"]], "split": "test"}
+{"id": "P-26", "question": "Can I get a price adjustment 10 days after buying?", "answerable": true, "expect": [["yes", "14 days"]], "split": "test"}
+{"id": "P-27", "question": "Can I get a price adjustment 20 days after buying?", "answerable": true, "expect": [["14", "re:^no\\b"]], "split": "dev"}
+{"id": "P-28", "question": "Can I return a sale item after 20 days?", "answerable": true, "expect": [["14", "re:^no\\b"]], "split": "dev"}
+{"id": "P-29", "question": "Can I return a Beacon Headlamp 20 days after delivery?", "answerable": true, "expect": [["15", "re:^no\\b"]], "split": "dev"}
+{"id": "P-30", "question": "Is the store open on Sunday at 10 am?", "answerable": true, "expect": [["11 am", "11:00", "re:^no\\b"]], "split": "dev"}
+{"id": "P-31", "question": "Is phone support available on Saturday?", "answerable": true, "expect": [["monday to friday", "friday", "not available", "re:^no\\b"]], "split": "dev"}
+{"id": "P-32", "question": "Is the store open on January 1?", "answerable": true, "expect": [["closed", "re:^no\\b"]], "split": "test"}
+{"id": "P-33", "question": "Can gift cards be exchanged for cash?", "answerable": true, "expect": [["cannot", "can't", "not be exchanged", "re:^no\\b"]], "split": "test"}
+{"id": "P-34", "question": "Does a gift card expire?", "answerable": true, "expect": [["never", "do not expire", "don't expire", "not expire"]], "split": "dev"}
+{"id": "P-35", "question": "Can I combine SPRING10 with a sale price?", "answerable": true, "expect": [["cannot", "can't", "not be combined", "re:^no\\b"]], "split": "dev"}
+{"id": "P-36", "question": "Do you sell camping stoves?", "answerable": false, "expect": [], "split": "dev"}
+{"id": "P-37", "question": "Who is the CEO of Fernwick Outfitters?", "answerable": false, "expect": [], "split": "dev"}
+{"id": "P-38", "question": "Is code WELCOME5 valid?", "answerable": false, "expect": [], "split": "test"}
+{"id": "P-39", "question": "What is the weather in Portland today?", "answerable": false, "expect": [], "split": "dev"}
+{"id": "P-40", "question": "Do you offer a student discount?", "answerable": false, "expect": [], "split": "dev"}
+{"id": "P-41", "question": "How do I reset my password?", "answerable": false, "expect": [], "split": "dev"}
+{"id": "P-42", "question": "What colours does the Ridgeline Sleeping Bag come in?", "answerable": false, "expect": [], "split": "dev"}
+{"id": "P-43", "question": "Does the Trailhead Pack 40L fit a laptop?", "answerable": false, "expect": [], "split": "test"}
+{"id": "P-44", "question": "How much does the Summit Tent 6P cost?", "answerable": false, "expect": [], "split": "test"}
+{"id": "P-45", "question": "Do you price match competitors?", "answerable": false, "expect": [], "split": "dev"}
+{"id": "P-46", "question": "Can I rent a tent?", "answerable": false, "expect": [], "split": "test"}
+{"id": "P-47", "question": "How heavy is the Compass GPS Watch?", "answerable": false, "expect": [], "split": "dev"}

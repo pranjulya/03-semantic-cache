@@ -1,0 +1,201 @@
+{
+  "n": 31,
+  "n_answerable": 23,
+  "n_unanswerable": 8,
+  "correct_answerable": 9,
+  "wrong_refusal": 14,
+  "wrong_answer": 0,
+  "correct_unanswerable": 8,
+  "false_answer": 0,
+  "results": [
+    {
+      "id": "P-01",
+      "question": "How many days do I have to return an unused item?",
+      "answer": "30 days",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-02",
+      "question": "Is the store open on Thanksgiving Day?",
+      "answer": "The store is closed on Thanksgiving Day.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-03",
+      "question": "Does coupon TRAIL20 work?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-04",
+      "question": "Do you allow cancelling 15 minutes after checkout?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-05",
+      "question": "What is the tax on $200 of goods bought in the store?",
+      "answer": "$11",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-07",
+      "question": "Do you ship to Mexico?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-08",
+      "question": "What time does the store close on December 24?",
+      "answer": "The store closes at 4 pm on December 24.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-09",
+      "question": "How much is the Summit Tent 4P?",
+      "answer": "The Summit Tent 4P is $499.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-11",
+      "question": "How long is the warranty on the Compass GPS Watch?",
+      "answer": "The warranty on the Compass GPS Watch is 2 years.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-14",
+      "question": "If I order at 1 pm Eastern, does it ship today?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-15",
+      "question": "If I order at 5 pm Eastern, does it ship today?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-16",
+      "question": "Can I return a sleeping bag I washed?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-17",
+      "question": "Is there a restocking fee on the Summit Tent 4P?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-22",
+      "question": "How many Trail Club points does a $150 purchase earn?",
+      "answer": "150",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-23",
+      "question": "How many points do I need for a $10 reward?",
+      "answer": "500 points",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-24",
+      "question": "How long does standard shipping to Canada take?",
+      "answer": "Standard shipping to Canada takes 8 to 12 business days.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-27",
+      "question": "Can I get a price adjustment 20 days after buying?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-28",
+      "question": "Can I return a sale item after 20 days?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-29",
+      "question": "Can I return a Beacon Headlamp 20 days after delivery?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-30",
+      "question": "Is the store open on Sunday at 10 am?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-31",
+      "question": "Is phone support available on Saturday?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-34",
+      "question": "Does a gift card expire?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-35",
+      "question": "Can I combine SPRING10 with a sale price?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-36",
+      "question": "Do you sell camping stoves?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-37",
+      "question": "Who is the CEO of Fernwick Outfitters?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-39",
+      "question": "What is the weather in Portland today?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-40",
+      "question": "Do you offer a student discount?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-41",
+      "question": "How do I reset my password?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-42",
+      "question": "What colours does the Ridgeline Sleeping Bag come in?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-45",
+      "question": "Do you price match competitors?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-47",
+      "question": "How heavy is the Compass GPS Watch?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    }
+  ],
+  "model": "qwen2.5:3b",
+  "prompt": "v2",
+  "split": "dev"
+}

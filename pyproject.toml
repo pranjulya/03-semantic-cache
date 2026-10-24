@@ -1,0 +1,34 @@
+[project]
+name = "scache"
+version = "0.1.0"
+description = "A local semantic cache for an LLM support assistant, evaluated on false hits, staleness and poisoning."
+readme = "README.md"
+keywords = ["semantic-cache", "llm", "rag", "evaluation", "ollama", "fastapi"]
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=1.5.9",
+    "fastapi>=0.161.1",
+    "httpx>=0.27",
+    "matplotlib>=3.9",
+    "numpy>=1.26",
+    "psutil>=5.9",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "sentence-transformers>=3.0",
+    "uvicorn>=0.54.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/scache"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["scripts"]
+markers = ["smoke: needs cached models and live local Ollama"]

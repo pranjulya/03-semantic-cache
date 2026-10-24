@@ -1,0 +1,200 @@
+{"id": "t30-001", "question": "Restocking fee for an opened Summit Tent 4P?", "intent": "restock_of:Summit Tent 4P", "repeat": false}
+{"id": "t30-002", "question": "Is the store open on Thanksgiving Day?", "intent": "open_on_date:Thanksgiving Day", "repeat": false}
+{"id": "t30-003", "question": "What can I redeem 100 points for?", "intent": "points_value:100", "repeat": false}
+{"id": "t30-004", "question": "Do I pay a restocking fee to return the Summit Tent 4P after opening it?", "intent": "restock_of:Summit Tent 4P", "repeat": true}
+{"id": "t30-005", "question": "Is a return still possible 28 days after delivery?", "intent": "return_after_days:28", "repeat": false}
+{"id": "t30-006", "question": "Do I pay shipping if I spend $55?", "intent": "free_ship_total:55", "repeat": false}
+{"id": "t30-007", "question": "What is the tax on $200 of goods bought in the store?", "intent": "tax_on:200", "repeat": false}
+{"id": "t30-008", "question": "Can I shop in the store on Thanksgiving Day?", "intent": "open_on_date:Thanksgiving Day", "repeat": true}
+{"id": "t30-009", "question": "Will an order placed at 5 pm Eastern go out the same day?", "intent": "ship_time_of_day:5 pm", "repeat": false}
+{"id": "t30-010", "question": "Does coupon TRAIL20 work?", "intent": "promo_code:TRAIL20", "repeat": false}
+{"id": "t30-011", "question": "Are you open on July 4?", "intent": "open_on_date:July 4", "repeat": false}
+{"id": "t30-012", "question": "How many dollars are 100 Trail Club points worth?", "intent": "points_value:100", "repeat": true}
+{"id": "t30-013", "question": "If I have 100 points, what reward do I get?", "intent": "points_value:100", "repeat": true}
+{"id": "t30-014", "question": "Is code WELCOME5 valid?", "intent": "promo_code:WELCOME5", "repeat": false}
+{"id": "t30-015", "question": "Will a $75 cart qualify for free delivery?", "intent": "free_ship_total:75", "repeat": false}
+{"id": "t30-016", "question": "Is the store open on Thanksgiving Day?", "intent": "open_on_date:Thanksgiving Day", "repeat": true}
+{"id": "t30-017", "question": "How much sales tax is added to a $200 in-store purchase?", "intent": "tax_on:200", "repeat": true}
+{"id": "t30-018", "question": "Are you open on Thanksgiving Day?", "intent": "open_on_date:Thanksgiving Day", "repeat": true}
+{"id": "t30-019", "question": "What is the SKU for the Summit Tent 2P?", "intent": "sku_of:Summit Tent 2P", "repeat": false}
+{"id": "t30-020", "question": "Is code WELCOME5 valid?", "intent": "promo_code:WELCOME5", "repeat": true}
+{"id": "t30-021", "question": "If I order at noon Eastern, does it ship today?", "intent": "ship_time_of_day:noon", "repeat": false}
+{"id": "t30-022", "question": "Is a return still possible 35 days after delivery?", "intent": "return_after_days:35", "repeat": false}
+{"id": "t30-023", "question": "Is the store open on Thanksgiving Day?", "intent": "open_on_date:Thanksgiving Day", "repeat": true}
+{"id": "t30-024", "question": "Restocking fee for an opened Trailhead Pack 40L?", "intent": "restock_of:Trailhead Pack 40L", "repeat": false}
+{"id": "t30-025", "question": "Which payment method gets the refund?", "intent": "np:refund_method", "repeat": false}
+{"id": "t30-026", "question": "What warranty comes with the Trailhead Pack 40L?", "intent": "warranty_of:Trailhead Pack 40L", "repeat": false}
+{"id": "t30-027", "question": "What is the delivery time to Canada?", "intent": "np:ship_canada_time", "repeat": false}
+{"id": "t30-028", "question": "Do I pay a restocking fee to return the Trailhead Pack 65L after opening it?", "intent": "restock_of:Trailhead Pack 65L", "repeat": false}
+{"id": "t30-029", "question": "Can I swap an item for another size?", "intent": "np:exchange_size", "repeat": false}
+{"id": "t30-030", "question": "How long until an express shipment arrives?", "intent": "np:ship_exp_time", "repeat": false}
+{"id": "t30-031", "question": "Do you allow cancelling 15 minutes after checkout?", "intent": "cancel_after:15 minutes", "repeat": false}
+{"id": "t30-032", "question": "If I spend $300, how many points do I get?", "intent": "points_earned:300", "repeat": false}
+{"id": "t30-033", "question": "Is code FALL30 valid?", "intent": "promo_code:FALL30", "repeat": false}
+{"id": "t30-034", "question": "How many days do I have to return the Trailhead Pack 65L?", "intent": "return_window_of:Trailhead Pack 65L", "repeat": false}
+{"id": "t30-035", "question": "Do you allow cancelling 3 hours after checkout?", "intent": "cancel_after:3 hours", "repeat": false}
+{"id": "t30-036", "question": "When can I call customer support?", "intent": "np:support_phone_hours", "repeat": false}
+{"id": "t30-037", "question": "What is the SKU for the Beacon Headlamp?", "intent": "sku_of:Beacon Headlamp", "repeat": false}
+{"id": "t30-038", "question": "I bought something 7 days ago and the price dropped. Can I get an adjustment?", "intent": "price_adj_after:7", "repeat": false}
+{"id": "t30-039", "question": "SKU of the Beacon Headlamp?", "intent": "sku_of:Beacon Headlamp", "repeat": true}
+{"id": "t30-040", "question": "Can I call support on Monday?", "intent": "phone_on_day:Monday", "repeat": false}
+{"id": "t30-041", "question": "A parcel arrived 35 days ago. Can I still return an item from it?", "intent": "return_after_days:35", "repeat": true}
+{"id": "t30-042", "question": "Do I pay a restocking fee to return the Trailhead Pack 40L after opening it?", "intent": "restock_of:Trailhead Pack 40L", "repeat": true}
+{"id": "t30-043", "question": "Is the Compass GPS Watch covered by a warranty, and for how long?", "intent": "warranty_of:Compass GPS Watch", "repeat": false}
+{"id": "t30-044", "question": "How long is the warranty on the Trailhead Pack 40L?", "intent": "warranty_of:Trailhead Pack 40L", "repeat": true}
+{"id": "t30-045", "question": "How long after delivery can the Trailhead Pack 40L be returned?", "intent": "return_window_of:Trailhead Pack 40L", "repeat": false}
+{"id": "t30-046", "question": "Does coupon SPRING10 work?", "intent": "promo_code:SPRING10", "repeat": false}
+{"id": "t30-047", "question": "Does coupon GEAR10 work?", "intent": "promo_code:GEAR10", "repeat": false}
+{"id": "t30-048", "question": "Is there a charge for return shipping?", "intent": "np:return_ship_fee", "repeat": false}
+{"id": "t30-049", "question": "Where does a refund go?", "intent": "np:refund_method", "repeat": true}
+{"id": "t30-050", "question": "Can I shop in the store on Thanksgiving Day?", "intent": "open_on_date:Thanksgiving Day", "repeat": true}
+{"id": "t30-051", "question": "Are you open on December 26?", "intent": "open_on_date:December 26", "repeat": false}
+{"id": "t30-052", "question": "How long after delivery can the Trailhead Pack 40L be returned?", "intent": "return_window_of:Trailhead Pack 40L", "repeat": true}
+{"id": "t30-053", "question": "What does it cost to mail a return?", "intent": "np:return_ship_fee", "repeat": true}
+{"id": "t30-054", "question": "Is standard shipping free on a $80 order?", "intent": "free_ship_total:80", "repeat": false}
+{"id": "t30-055", "question": "Is standard shipping free on a $30 order?", "intent": "free_ship_total:30", "repeat": false}
+{"id": "t30-056", "question": "Do I pay shipping if I spend $74?", "intent": "free_ship_total:74", "repeat": false}
+{"id": "t30-057", "question": "How many days do I have to return the Summit Tent 4P?", "intent": "return_window_of:Summit Tent 4P", "repeat": false}
+{"id": "t30-058", "question": "Is phone support available on Saturday?", "intent": "phone_on_day:Saturday", "repeat": false}
+{"id": "t30-059", "question": "Does coupon SPRING10 work?", "intent": "promo_code:SPRING10", "repeat": true}
+{"id": "t30-060", "question": "I bought something 7 days ago and the price dropped. Can I get an adjustment?", "intent": "price_adj_after:7", "repeat": true}
+{"id": "t30-061", "question": "What is the policy for returning clearance items?", "intent": "np:return_sale", "repeat": false}
+{"id": "t30-062", "question": "What is the return window for the Beacon Headlamp?", "intent": "return_window_of:Beacon Headlamp", "repeat": false}
+{"id": "t30-063", "question": "Do you offer cash on delivery?", "intent": "np:pay_cod", "repeat": false}
+{"id": "t30-064", "question": "Does the phone line work on Friday?", "intent": "phone_on_day:Friday", "repeat": false}
+{"id": "t30-065", "question": "Can I get a price adjustment 10 days after buying?", "intent": "price_adj_after:10", "repeat": false}
+{"id": "t30-066", "question": "Can you ship to a PO box?", "intent": "np:ship_pobox", "repeat": false}
+{"id": "t30-067", "question": "Can I return something 7 days after it was delivered?", "intent": "return_after_days:7", "repeat": false}
+{"id": "t30-068", "question": "Which product code is the Trailhead Pack 40L?", "intent": "sku_of:Trailhead Pack 40L", "repeat": false}
+{"id": "t30-069", "question": "What head start do members have on sales?", "intent": "np:club_early", "repeat": false}
+{"id": "t30-070", "question": "Is a return still possible 28 days after delivery?", "intent": "return_after_days:28", "repeat": true}
+{"id": "t30-071", "question": "Which number do I call for support?", "intent": "np:support_phone", "repeat": false}
+{"id": "t30-072", "question": "Is a price adjustment possible 2 days after purchase?", "intent": "price_adj_after:2", "repeat": false}
+{"id": "t30-073", "question": "Are normal wear and tear covered by the warranty?", "intent": "np:warranty_covers", "repeat": false}
+{"id": "t30-074", "question": "Is standard shipping free on a $30 order?", "intent": "free_ship_total:30", "repeat": true}
+{"id": "t30-075", "question": "What can I redeem 400 points for?", "intent": "points_value:400", "repeat": false}
+{"id": "t30-076", "question": "Is the Ridgeline Sleeping Bag covered by a warranty, and for how long?", "intent": "warranty_of:Ridgeline Sleeping Bag", "repeat": false}
+{"id": "t30-077", "question": "How long after delivery can the Trailhead Pack 65L be returned?", "intent": "return_window_of:Trailhead Pack 65L", "repeat": true}
+{"id": "t30-078", "question": "Can I get a price adjustment 30 days after buying?", "intent": "price_adj_after:30", "repeat": false}
+{"id": "t30-079", "question": "Is a return still possible 7 days after delivery?", "intent": "return_after_days:7", "repeat": true}
+{"id": "t30-080", "question": "Do you allow cancelling 3 hours after checkout?", "intent": "cancel_after:3 hours", "repeat": true}
+{"id": "t30-081", "question": "Is the store open on Thanksgiving Day?", "intent": "open_on_date:Thanksgiving Day", "repeat": true}
+{"id": "t30-082", "question": "Sales tax on a $200 item bought at the store?", "intent": "tax_on:200", "repeat": true}
+{"id": "t30-083", "question": "What is the return window for the Trailhead Pack 65L?", "intent": "return_window_of:Trailhead Pack 65L", "repeat": true}
+{"id": "t30-084", "question": "Can I pay with a cheque?", "intent": "np:pay_checks", "repeat": false}
+{"id": "t30-085", "question": "Which number do I call for support?", "intent": "np:support_phone", "repeat": true}
+{"id": "t30-086", "question": "When is the cutoff for same-day shipping?", "intent": "np:ship_cutoff", "repeat": false}
+{"id": "t30-087", "question": "Is the store open on July 4?", "intent": "open_on_date:July 4", "repeat": true}
+{"id": "t30-088", "question": "Can I get a price adjustment 30 days after buying?", "intent": "price_adj_after:30", "repeat": true}
+{"id": "t30-089", "question": "What head start do members have on sales?", "intent": "np:club_early", "repeat": true}
+{"id": "t30-090", "question": "Restocking fee for an opened Trailhead Pack 40L?", "intent": "restock_of:Trailhead Pack 40L", "repeat": true}
+{"id": "t30-091", "question": "Can I get a price adjustment 20 days after buying?", "intent": "price_adj_after:20", "repeat": false}
+{"id": "t30-092", "question": "What warranty comes with the Trailhead Pack 65L?", "intent": "warranty_of:Trailhead Pack 65L", "repeat": false}
+{"id": "t30-093", "question": "Is a return still possible 12 days after delivery?", "intent": "return_after_days:12", "repeat": false}
+{"id": "t30-094", "question": "Can I swap an item for another size?", "intent": "np:exchange_size", "repeat": true}
+{"id": "t30-095", "question": "When does the store open and close on Thursday?", "intent": "hours_on_day:Thursday", "repeat": false}
+{"id": "t30-096", "question": "Is standard shipping free on a $76 order?", "intent": "free_ship_total:76", "repeat": false}
+{"id": "t30-097", "question": "Do promo codes stack?", "intent": "np:promo_stack", "repeat": false}
+{"id": "t30-098", "question": "Can you ship to a PO box?", "intent": "np:ship_pobox", "repeat": true}
+{"id": "t30-099", "question": "How many days do I have to return the Trailhead Pack 40L?", "intent": "return_window_of:Trailhead Pack 40L", "repeat": true}
+{"id": "t30-100", "question": "What is the support phone number?", "intent": "np:support_phone", "repeat": true}
+{"id": "t30-101", "question": "I bought something 20 days ago and the price dropped. Can I get an adjustment?", "intent": "price_adj_after:20", "repeat": true}
+{"id": "t30-102", "question": "Can I shop in the store on December 24?", "intent": "open_on_date:December 24", "repeat": false}
+{"id": "t30-103", "question": "Is a $5 gift card allowed?", "intent": "gift_amount:5", "repeat": false}
+{"id": "t30-104", "question": "How much does the Summit Tent 4P cost?", "intent": "price_of:Summit Tent 4P", "repeat": false}
+{"id": "t30-105", "question": "Is a return still possible 10 days after delivery?", "intent": "return_after_days:10", "repeat": false}
+{"id": "t30-106", "question": "Can I buy a $10 gift card?", "intent": "gift_amount:10", "repeat": false}
+{"id": "t30-107", "question": "Is there a restocking fee when returning an opened Ridgeline Sleeping Bag?", "intent": "restock_of:Ridgeline Sleeping Bag", "repeat": false}
+{"id": "t30-108", "question": "Can I use more than one promo code?", "intent": "np:promo_stack", "repeat": true}
+{"id": "t30-109", "question": "Does coupon SUMMER15 work?", "intent": "promo_code:SUMMER15", "repeat": false}
+{"id": "t30-110", "question": "Where can I visit your shop?", "intent": "np:store_address", "repeat": false}
+{"id": "t30-111", "question": "Can I get the new lower price after purchase?", "intent": "np:price_adjust", "repeat": false}
+{"id": "t30-112", "question": "How many business days does a refund take?", "intent": "np:refund_time", "repeat": false}
+{"id": "t30-113", "question": "Where is the store?", "intent": "np:store_address", "repeat": true}
+{"id": "t30-114", "question": "How long is the warranty on the Beacon Headlamp?", "intent": "warranty_of:Beacon Headlamp", "repeat": false}
+{"id": "t30-115", "question": "How can I claim on a warranty?", "intent": "np:warranty_claim", "repeat": false}
+{"id": "t30-116", "question": "What happens if the price drops after I buy?", "intent": "np:price_adjust", "repeat": true}
+{"id": "t30-117", "question": "A parcel arrived 7 days ago. Can I still return an item from it?", "intent": "return_after_days:7", "repeat": true}
+{"id": "t30-118", "question": "When does the store open and close on Thursday?", "intent": "hours_on_day:Thursday", "repeat": true}
+{"id": "t30-119", "question": "Is standard shipping free on a $70 order?", "intent": "free_ship_total:70", "repeat": false}
+{"id": "t30-120", "question": "What can I redeem 1000 points for?", "intent": "points_value:1000", "repeat": false}
+{"id": "t30-121", "question": "Can I call support on Friday?", "intent": "phone_on_day:Friday", "repeat": true}
+{"id": "t30-122", "question": "Is a return still possible 40 days after delivery?", "intent": "return_after_days:40", "repeat": false}
+{"id": "t30-123", "question": "Is there a window for cancelling an order?", "intent": "np:order_cancel", "repeat": false}
+{"id": "t30-124", "question": "Do you allow cancelling 30 minutes after checkout?", "intent": "cancel_after:30 minutes", "repeat": false}
+{"id": "t30-125", "question": "How long after delivery can I send back something I haven't used?", "intent": "np:return_unused", "repeat": false}
+{"id": "t30-126", "question": "When does the store open and close on Wednesday?", "intent": "hours_on_day:Wednesday", "repeat": false}
+{"id": "t30-127", "question": "How many points will $150 of spending give me?", "intent": "points_earned:150", "repeat": false}
+{"id": "t30-128", "question": "Is there a window for cancelling an order?", "intent": "np:order_cancel", "repeat": true}
+{"id": "t30-129", "question": "Which cards and wallets can I use online?", "intent": "np:pay_methods", "repeat": false}
+{"id": "t30-130", "question": "Can I get a price adjustment 15 days after buying?", "intent": "price_adj_after:15", "repeat": false}
+{"id": "t30-131", "question": "Does coupon HIKE20 work?", "intent": "promo_code:HIKE20", "repeat": false}
+{"id": "t30-132", "question": "How late is the store open on Tuesday?", "intent": "hours_on_day:Tuesday", "repeat": false}
+{"id": "t30-133", "question": "SKU of the Trailhead Pack 65L?", "intent": "sku_of:Trailhead Pack 65L", "repeat": false}
+{"id": "t30-134", "question": "When does the store open and close on Tuesday?", "intent": "hours_on_day:Tuesday", "repeat": true}
+{"id": "t30-135", "question": "How long is the warranty on the Summit Tent 4P?", "intent": "warranty_of:Summit Tent 4P", "repeat": false}
+{"id": "t30-136", "question": "How are Trail Club points earned?", "intent": "np:club_earn", "repeat": false}
+{"id": "t30-137", "question": "Is it too late to cancel 15 minutes after ordering?", "intent": "cancel_after:15 minutes", "repeat": true}
+{"id": "t30-138", "question": "What is the turnaround for a zipper fix?", "intent": "np:zipper_time", "repeat": false}
+{"id": "t30-139", "question": "What are the store hours on Monday?", "intent": "hours_on_day:Monday", "repeat": false}
+{"id": "t30-140", "question": "How much does the Trailhead Pack 65L cost?", "intent": "price_of:Trailhead Pack 65L", "repeat": false}
+{"id": "t30-141", "question": "Is a $500 gift card allowed?", "intent": "gift_amount:500", "repeat": false}
+{"id": "t30-142", "question": "If I have 250 points, what reward do I get?", "intent": "points_value:250", "repeat": false}
+{"id": "t30-143", "question": "Is cash accepted for in-store purchases?", "intent": "np:store_cash", "repeat": false}
+{"id": "t30-144", "question": "Are you open on December 31?", "intent": "open_on_date:December 31", "repeat": false}
+{"id": "t30-145", "question": "How can I phone customer support?", "intent": "np:support_phone", "repeat": true}
+{"id": "t30-146", "question": "Can I buy a $100 gift card?", "intent": "gift_amount:100", "repeat": false}
+{"id": "t30-147", "question": "Price of the Compass GPS Watch?", "intent": "price_of:Compass GPS Watch", "repeat": false}
+{"id": "t30-148", "question": "If I order at 7 pm Eastern, does it ship today?", "intent": "ship_time_of_day:7 pm", "repeat": false}
+{"id": "t30-149", "question": "Is standard shipping free on a $60 order?", "intent": "free_ship_total:60", "repeat": false}
+{"id": "t30-150", "question": "Will a $120 cart qualify for free delivery?", "intent": "free_ship_total:120", "repeat": false}
+{"id": "t30-151", "question": "What is the return window for the Summit Tent 2P?", "intent": "return_window_of:Summit Tent 2P", "repeat": false}
+{"id": "t30-152", "question": "If I spend $20, how many points do I get?", "intent": "points_earned:20", "repeat": false}
+{"id": "t30-153", "question": "How much is delivery to Canada?", "intent": "np:ship_canada_cost", "repeat": false}
+{"id": "t30-154", "question": "Can I buy a $600 gift card?", "intent": "gift_amount:600", "repeat": false}
+{"id": "t30-155", "question": "Can I return something 28 days after it was delivered?", "intent": "return_after_days:28", "repeat": true}
+{"id": "t30-156", "question": "Does coupon WELCOME5 work?", "intent": "promo_code:WELCOME5", "repeat": true}
+{"id": "t30-157", "question": "Is standard shipping free on a $45 order?", "intent": "free_ship_total:45", "repeat": false}
+{"id": "t30-158", "question": "What time does the shop close on weekdays?", "intent": "np:hours_weekday", "repeat": false}
+{"id": "t30-159", "question": "Is a return still possible 25 days after delivery?", "intent": "return_after_days:25", "repeat": false}
+{"id": "t30-160", "question": "How much does the Summit Tent 2P cost?", "intent": "price_of:Summit Tent 2P", "repeat": false}
+{"id": "t30-161", "question": "How many days do I have to return the Summit Tent 2P?", "intent": "return_window_of:Summit Tent 2P", "repeat": true}
+{"id": "t30-162", "question": "Can I return something 50 days after it was delivered?", "intent": "return_after_days:50", "repeat": false}
+{"id": "t30-163", "question": "Is there a time limit on returning unused products?", "intent": "np:return_unused", "repeat": true}
+{"id": "t30-164", "question": "I bought something 5 days ago and the price dropped. Can I get an adjustment?", "intent": "price_adj_after:5", "repeat": false}
+{"id": "t30-165", "question": "Is phone support available on Friday?", "intent": "phone_on_day:Friday", "repeat": true}
+{"id": "t30-166", "question": "Which days is the store closed?", "intent": "np:closed_days", "repeat": false}
+{"id": "t30-167", "question": "Does coupon SAVE25 work?", "intent": "promo_code:SAVE25", "repeat": false}
+{"id": "t30-168", "question": "What does express delivery cost?", "intent": "np:ship_exp_cost", "repeat": false}
+{"id": "t30-169", "question": "If I spend $450, how many points do I get?", "intent": "points_earned:450", "repeat": false}
+{"id": "t30-170", "question": "Is a $25 gift card allowed?", "intent": "gift_amount:25", "repeat": false}
+{"id": "t30-171", "question": "Can I use the code HIKE20 at checkout?", "intent": "promo_code:HIKE20", "repeat": true}
+{"id": "t30-172", "question": "A parcel arrived 60 days ago. Can I still return an item from it?", "intent": "return_after_days:60", "repeat": false}
+{"id": "t30-173", "question": "How much does the Trailhead Pack 40L cost?", "intent": "price_of:Trailhead Pack 40L", "repeat": false}
+{"id": "t30-174", "question": "How many points will $200 of spending give me?", "intent": "points_earned:200", "repeat": false}
+{"id": "t30-175", "question": "Is there a restocking fee when returning an opened Summit Tent 2P?", "intent": "restock_of:Summit Tent 2P", "repeat": false}
+{"id": "t30-176", "question": "Will an order placed at 5 pm Eastern go out the same day?", "intent": "ship_time_of_day:5 pm", "repeat": true}
+{"id": "t30-177", "question": "Do I pay a restocking fee to return the Compass GPS Watch after opening it?", "intent": "restock_of:Compass GPS Watch", "repeat": false}
+{"id": "t30-178", "question": "Is it possible to swap a gift card for cash?", "intent": "np:gift_cash", "repeat": false}
+{"id": "t30-179", "question": "Is a price adjustment possible 14 days after purchase?", "intent": "price_adj_after:14", "repeat": false}
+{"id": "t30-180", "question": "Is code SPRING10 valid?", "intent": "promo_code:SPRING10", "repeat": true}
+{"id": "t30-181", "question": "Do gift cards have an expiry?", "intent": "np:gift_expire", "repeat": false}
+{"id": "t30-182", "question": "Can I shop in the store on December 25?", "intent": "open_on_date:December 25", "repeat": false}
+{"id": "t30-183", "question": "Does coupon FALL30 work?", "intent": "promo_code:FALL30", "repeat": true}
+{"id": "t30-184", "question": "Does the phone line work on Tuesday?", "intent": "phone_on_day:Tuesday", "repeat": false}
+{"id": "t30-185", "question": "Is phone support available on Monday?", "intent": "phone_on_day:Monday", "repeat": true}
+{"id": "t30-186", "question": "Can I return something 20 days after it was delivered?", "intent": "return_after_days:20", "repeat": false}
+{"id": "t30-187", "question": "When does the store open and close on Sunday?", "intent": "hours_on_day:Sunday", "repeat": false}
+{"id": "t30-188", "question": "How many Trail Club points does a $20 purchase earn?", "intent": "points_earned:20", "repeat": true}
+{"id": "t30-189", "question": "How do I update the delivery address?", "intent": "np:order_address", "repeat": false}
+{"id": "t30-190", "question": "How many dollars are 750 Trail Club points worth?", "intent": "points_value:750", "repeat": false}
+{"id": "t30-191", "question": "How many points will $50 of spending give me?", "intent": "points_earned:50", "repeat": false}
+{"id": "t30-192", "question": "How much sales tax is added to a $500 in-store purchase?", "intent": "tax_on:500", "repeat": false}
+{"id": "t30-193", "question": "What can I redeem 500 points for?", "intent": "points_value:500", "repeat": false}
+{"id": "t30-194", "question": "How are Trail Club points earned?", "intent": "np:club_earn", "repeat": true}
+{"id": "t30-195", "question": "Can I use the code WELCOME5 at checkout?", "intent": "promo_code:WELCOME5", "repeat": true}
+{"id": "t30-196", "question": "Is the Summit Tent 2P covered by a warranty, and for how long?", "intent": "warranty_of:Summit Tent 2P", "repeat": false}
+{"id": "t30-197", "question": "How much sales tax is added to a $50 in-store purchase?", "intent": "tax_on:50", "repeat": false}
+{"id": "t30-198", "question": "Do you allow cancelling 45 minutes after checkout?", "intent": "cancel_after:45 minutes", "repeat": false}
+{"id": "t30-199", "question": "How soon do you send an exchange item?", "intent": "np:exchange_when", "repeat": false}
+{"id": "t30-200", "question": "Which countries do you ship to?", "intent": "np:ship_countries", "repeat": false}

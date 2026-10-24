@@ -1,0 +1,111 @@
+{
+  "n": 16,
+  "n_answerable": 12,
+  "n_unanswerable": 4,
+  "correct_answerable": 9,
+  "wrong_refusal": 2,
+  "wrong_answer": 1,
+  "correct_unanswerable": 4,
+  "false_answer": 0,
+  "results": [
+    {
+      "id": "P-06",
+      "question": "Can I buy a $600 gift card?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-10",
+      "question": "What is the SKU for the Beacon Headlamp?",
+      "answer": "BH-1",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-12",
+      "question": "Is standard shipping free on a $80 order?",
+      "answer": "No.",
+      "outcome": "wrong_answer"
+    },
+    {
+      "id": "P-13",
+      "question": "Is standard shipping free on a $60 order?",
+      "answer": "No.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-18",
+      "question": "Is there a restocking fee on the Beacon Headlamp?",
+      "answer": "No restocking fee on the Beacon Headlamp.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-19",
+      "question": "What is the phone number for support?",
+      "answer": "207-555-0142",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-20",
+      "question": "Can I pay cash in the store?",
+      "answer": "Yes.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-21",
+      "question": "Do you take checks?",
+      "answer": "No.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-25",
+      "question": "What does an order number look like?",
+      "answer": "Order numbers look like FO-123456: the letters FO, a dash and six digits.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-26",
+      "question": "Can I get a price adjustment 10 days after buying?",
+      "answer": "NOT_FOUND",
+      "outcome": "wrong_refusal"
+    },
+    {
+      "id": "P-32",
+      "question": "Is the store open on January 1?",
+      "answer": "No.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-33",
+      "question": "Can gift cards be exchanged for cash?",
+      "answer": "Gift cards cannot be exchanged for cash.",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-38",
+      "question": "Is code WELCOME5 valid?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-43",
+      "question": "Does the Trailhead Pack 40L fit a laptop?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-44",
+      "question": "How much does the Summit Tent 6P cost?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    },
+    {
+      "id": "P-46",
+      "question": "Can I rent a tent?",
+      "answer": "NOT_FOUND",
+      "outcome": "ok"
+    }
+  ],
+  "model": "qwen2.5:7b",
+  "prompt": "v1",
+  "split": "test"
+}

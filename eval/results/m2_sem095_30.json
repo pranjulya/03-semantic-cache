@@ -1,0 +1,93 @@
+{
+  "run_id": "traffic_30-semantic-0.95-qwen2.5:7b-1792838456",
+  "traffic": "eval/traffic_30.jsonl",
+  "mode": "single-threshold semantic cache",
+  "threshold": 0.95,
+  "embedder": "BAAI/bge-small-en-v1.5",
+  "model": "qwen2.5:7b",
+  "prompt": "v4",
+  "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "policy_version": "v1",
+  "when": "2026-10-24T10:43:30+00:00",
+  "elapsed_s": 152.70245987502858,
+  "failed": [],
+  "n": 200,
+  "decisions": {
+    "miss": 171,
+    "hit": 29
+  },
+  "latency_by_decision": {
+    "miss": {
+      "n": 171,
+      "p50": 919.8941249633208,
+      "p95": 1811.479979485739
+    },
+    "hit": {
+      "n": 29,
+      "p50": 14.782708021812141,
+      "p95": 39.6762831835076
+    }
+  },
+  "latency_ms": {
+    "mean": 762.6491489511682,
+    "p50": 830.2793539478444,
+    "p95": 1773.2177792757277
+  },
+  "llm_ms": {
+    "p50": 890.7476250315085,
+    "p95": 1789.7452499601059
+  },
+  "llm_total_s": 147.63503925816622,
+  "wall_total_s": 152.52982979023363,
+  "quality": {
+    "requests": 200,
+    "hits": 29,
+    "hit_rate": 0.145,
+    "false_hits": 4,
+    "false_hit_rate": 0.13793103448275862,
+    "false_hit_share_of_requests": 0.02,
+    "repeats": 60,
+    "repeat_correct_hits": 25,
+    "repeat_recall": 0.4166666666666667,
+    "false_hit_examples": [
+      {
+        "id": "t30-042",
+        "asked": "Do I pay a restocking fee to return the Trailhead Pack 40L after opening it?",
+        "asked_intent": "restock_of:Trailhead Pack 40L",
+        "matched": "Do I pay a restocking fee to return the Trailhead Pack 65L after opening it?",
+        "matched_intent": "restock_of:Trailhead Pack 65L",
+        "similarity": 0.9705042243003845
+      },
+      {
+        "id": "t30-149",
+        "asked": "Is standard shipping free on a $60 order?",
+        "asked_intent": "free_ship_total:60",
+        "matched": "Is standard shipping free on a $76 order?",
+        "matched_intent": "free_ship_total:76",
+        "similarity": 0.9573908448219299
+      },
+      {
+        "id": "t30-161",
+        "asked": "How many days do I have to return the Summit Tent 2P?",
+        "asked_intent": "return_window_of:Summit Tent 2P",
+        "matched": "How many days do I have to return the Summit Tent 4P?",
+        "matched_intent": "return_window_of:Summit Tent 4P",
+        "similarity": 0.9581514596939087
+      },
+      {
+        "id": "t30-175",
+        "asked": "Is there a restocking fee when returning an opened Summit Tent 2P?",
+        "asked_intent": "restock_of:Summit Tent 2P",
+        "matched": "Do I pay a restocking fee to return the Summit Tent 4P after opening it?",
+        "matched_intent": "restock_of:Summit Tent 4P",
+        "similarity": 0.9517080187797546
+      }
+    ]
+  },
+  "vs_baseline": {
+    "baseline": "eval/results/m1_baseline_v4_7b_30.json",
+    "wall_saved_s": 21.443667374784127,
+    "llm_saved_s": 26.331857861136086,
+    "note": "separate runs; LLM time varies a little between runs"
+  }
+}

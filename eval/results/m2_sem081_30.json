@@ -1,0 +1,261 @@
+{
+  "run_id": "traffic_30-semantic-0.81-qwen2.5:7b-1792838210",
+  "traffic": "eval/traffic_30.jsonl",
+  "mode": "single-threshold semantic cache",
+  "threshold": 0.81,
+  "embedder": "BAAI/bge-small-en-v1.5",
+  "model": "qwen2.5:7b",
+  "prompt": "v4",
+  "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "policy_version": "v1",
+  "when": "2026-10-24T10:37:54+00:00",
+  "elapsed_s": 63.420742916991,
+  "failed": [],
+  "n": 200,
+  "decisions": {
+    "miss": 74,
+    "hit": 126
+  },
+  "latency_by_decision": {
+    "miss": {
+      "n": 74,
+      "p50": 934.6489789895713,
+      "p95": 1367.4421306466681
+    },
+    "hit": {
+      "n": 126,
+      "p50": 8.563374925870448,
+      "p95": 32.260885811410844
+    }
+  },
+  "latency_ms": {
+    "mean": 316.2902970839059,
+    "p50": 16.143958491738886,
+    "p95": 1252.0330603059847
+  },
+  "llm_ms": {
+    "p50": 913.1758124567568,
+    "p95": 1349.0612441673873
+  },
+  "llm_total_s": 59.505679667927325,
+  "wall_total_s": 63.25805941678118,
+  "quality": {
+    "requests": 200,
+    "hits": 126,
+    "hit_rate": 0.63,
+    "false_hits": 103,
+    "false_hit_rate": 0.8174603174603174,
+    "false_hit_share_of_requests": 0.515,
+    "repeats": 60,
+    "repeat_correct_hits": 23,
+    "repeat_recall": 0.38333333333333336,
+    "false_hit_examples": [
+      {
+        "id": "t30-021",
+        "asked": "If I order at noon Eastern, does it ship today?",
+        "asked_intent": "ship_time_of_day:noon",
+        "matched": "Will an order placed at 5 pm Eastern go out the same day?",
+        "matched_intent": "ship_time_of_day:5 pm",
+        "similarity": 0.8347798585891724
+      },
+      {
+        "id": "t30-022",
+        "asked": "Is a return still possible 35 days after delivery?",
+        "asked_intent": "return_after_days:35",
+        "matched": "Is a return still possible 28 days after delivery?",
+        "matched_intent": "return_after_days:28",
+        "similarity": 0.9322593212127686
+      },
+      {
+        "id": "t30-024",
+        "asked": "Restocking fee for an opened Trailhead Pack 40L?",
+        "asked_intent": "restock_of:Trailhead Pack 40L",
+        "matched": "Restocking fee for an opened Summit Tent 4P?",
+        "matched_intent": "restock_of:Summit Tent 4P",
+        "similarity": 0.833584189414978
+      },
+      {
+        "id": "t30-030",
+        "asked": "How long until an express shipment arrives?",
+        "asked_intent": "np:ship_exp_time",
+        "matched": "What is the delivery time to Canada?",
+        "matched_intent": "np:ship_canada_time",
+        "similarity": 0.8158416748046875
+      },
+      {
+        "id": "t30-034",
+        "asked": "How many days do I have to return the Trailhead Pack 65L?",
+        "asked_intent": "return_window_of:Trailhead Pack 65L",
+        "matched": "Do I pay a restocking fee to return the Trailhead Pack 65L after opening it?",
+        "matched_intent": "restock_of:Trailhead Pack 65L",
+        "similarity": 0.8765994906425476
+      },
+      {
+        "id": "t30-040",
+        "asked": "Can I call support on Monday?",
+        "asked_intent": "phone_on_day:Monday",
+        "matched": "When can I call customer support?",
+        "matched_intent": "np:support_phone_hours",
+        "similarity": 0.8581914305686951
+      },
+      {
+        "id": "t30-041",
+        "asked": "A parcel arrived 35 days ago. Can I still return an item from it?",
+        "asked_intent": "return_after_days:35",
+        "matched": "Is a return still possible 28 days after delivery?",
+        "matched_intent": "return_after_days:28",
+        "similarity": 0.8116100430488586
+      },
+      {
+        "id": "t30-042",
+        "asked": "Do I pay a restocking fee to return the Trailhead Pack 40L after opening it?",
+        "asked_intent": "restock_of:Trailhead Pack 40L",
+        "matched": "Do I pay a restocking fee to return the Trailhead Pack 65L after opening it?",
+        "matched_intent": "restock_of:Trailhead Pack 65L",
+        "similarity": 0.9705042243003845
+      },
+      {
+        "id": "t30-045",
+        "asked": "How long after delivery can the Trailhead Pack 40L be returned?",
+        "asked_intent": "return_window_of:Trailhead Pack 40L",
+        "matched": "What warranty comes with the Trailhead Pack 40L?",
+        "matched_intent": "warranty_of:Trailhead Pack 40L",
+        "similarity": 0.8485549092292786
+      },
+      {
+        "id": "t30-047",
+        "asked": "Does coupon GEAR10 work?",
+        "asked_intent": "promo_code:GEAR10",
+        "matched": "Does coupon SPRING10 work?",
+        "matched_intent": "promo_code:SPRING10",
+        "similarity": 0.8763808608055115
+      },
+      {
+        "id": "t30-052",
+        "asked": "How long after delivery can the Trailhead Pack 40L be returned?",
+        "asked_intent": "return_window_of:Trailhead Pack 40L",
+        "matched": "What warranty comes with the Trailhead Pack 40L?",
+        "matched_intent": "warranty_of:Trailhead Pack 40L",
+        "similarity": 0.8485549092292786
+      },
+      {
+        "id": "t30-054",
+        "asked": "Is standard shipping free on a $80 order?",
+        "asked_intent": "free_ship_total:80",
+        "matched": "Do I pay shipping if I spend $55?",
+        "matched_intent": "free_ship_total:55",
+        "similarity": 0.812254011631012
+      },
+      {
+        "id": "t30-056",
+        "asked": "Do I pay shipping if I spend $74?",
+        "asked_intent": "free_ship_total:74",
+        "matched": "Do I pay shipping if I spend $55?",
+        "matched_intent": "free_ship_total:55",
+        "similarity": 0.8888542056083679
+      },
+      {
+        "id": "t30-057",
+        "asked": "How many days do I have to return the Summit Tent 4P?",
+        "asked_intent": "return_window_of:Summit Tent 4P",
+        "matched": "Restocking fee for an opened Summit Tent 4P?",
+        "matched_intent": "restock_of:Summit Tent 4P",
+        "similarity": 0.8517506718635559
+      },
+      {
+        "id": "t30-062",
+        "asked": "What is the return window for the Beacon Headlamp?",
+        "asked_intent": "return_window_of:Beacon Headlamp",
+        "matched": "What is the SKU for the Beacon Headlamp?",
+        "matched_intent": "sku_of:Beacon Headlamp",
+        "similarity": 0.8537362217903137
+      },
+      {
+        "id": "t30-064",
+        "asked": "Does the phone line work on Friday?",
+        "asked_intent": "phone_on_day:Friday",
+        "matched": "Is phone support available on Saturday?",
+        "matched_intent": "phone_on_day:Saturday",
+        "similarity": 0.8696675896644592
+      },
+      {
+        "id": "t30-065",
+        "asked": "Can I get a price adjustment 10 days after buying?",
+        "asked_intent": "price_adj_after:10",
+        "matched": "I bought something 7 days ago and the price dropped. Can I get an adjustment?",
+        "matched_intent": "price_adj_after:7",
+        "similarity": 0.8723930716514587
+      },
+      {
+        "id": "t30-067",
+        "asked": "Can I return something 7 days after it was delivered?",
+        "asked_intent": "return_after_days:7",
+        "matched": "Is a return still possible 28 days after delivery?",
+        "matched_intent": "return_after_days:28",
+        "similarity": 0.8455709218978882
+      },
+      {
+        "id": "t30-068",
+        "asked": "Which product code is the Trailhead Pack 40L?",
+        "asked_intent": "sku_of:Trailhead Pack 40L",
+        "matched": "What warranty comes with the Trailhead Pack 40L?",
+        "matched_intent": "warranty_of:Trailhead Pack 40L",
+        "similarity": 0.8843056559562683
+      },
+      {
+        "id": "t30-071",
+        "asked": "Which number do I call for support?",
+        "asked_intent": "np:support_phone",
+        "matched": "When can I call customer support?",
+        "matched_intent": "np:support_phone_hours",
+        "similarity": 0.8571766018867493
+      },
+      {
+        "id": "t30-072",
+        "asked": "Is a price adjustment possible 2 days after purchase?",
+        "asked_intent": "price_adj_after:2",
+        "matched": "I bought something 7 days ago and the price dropped. Can I get an adjustment?",
+        "matched_intent": "price_adj_after:7",
+        "similarity": 0.8784338235855103
+      },
+      {
+        "id": "t30-077",
+        "asked": "How long after delivery can the Trailhead Pack 65L be returned?",
+        "asked_intent": "return_window_of:Trailhead Pack 65L",
+        "matched": "Do I pay a restocking fee to return the Trailhead Pack 65L after opening it?",
+        "matched_intent": "restock_of:Trailhead Pack 65L",
+        "similarity": 0.8683634400367737
+      },
+      {
+        "id": "t30-078",
+        "asked": "Can I get a price adjustment 30 days after buying?",
+        "asked_intent": "price_adj_after:30",
+        "matched": "I bought something 7 days ago and the price dropped. Can I get an adjustment?",
+        "matched_intent": "price_adj_after:7",
+        "similarity": 0.8712104558944702
+      },
+      {
+        "id": "t30-079",
+        "asked": "Is a return still possible 7 days after delivery?",
+        "asked_intent": "return_after_days:7",
+        "matched": "Is a return still possible 28 days after delivery?",
+        "matched_intent": "return_after_days:28",
+        "similarity": 0.9300718903541565
+      },
+      {
+        "id": "t30-083",
+        "asked": "What is the return window for the Trailhead Pack 65L?",
+        "asked_intent": "return_window_of:Trailhead Pack 65L",
+        "matched": "Do I pay a restocking fee to return the Trailhead Pack 65L after opening it?",
+        "matched_intent": "restock_of:Trailhead Pack 65L",
+        "similarity": 0.8603888750076294
+      }
+    ]
+  },
+  "vs_baseline": {
+    "baseline": "eval/results/m1_baseline_v4_7b_30.json",
+    "wall_saved_s": 110.71543774823658,
+    "llm_saved_s": 114.46121745137498,
+    "note": "separate runs; LLM time varies a little between runs"
+  }
+}

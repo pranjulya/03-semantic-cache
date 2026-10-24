@@ -1,0 +1,334 @@
+{
+  "verifier": "llm-judge:qwen2.5:3b",
+  "low": 0.765,
+  "high": 0.93,
+  "score_threshold": null,
+  "pairs": "eval/pairs.jsonl",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "calibration": {
+    "all": {
+      "n_paraphrase": 35,
+      "paraphrase_accepted": 11,
+      "n_miss": 70,
+      "miss_accepted": 0,
+      "near_miss_accepted": 0,
+      "n_near_miss": 35,
+      "accuracy": 0.7714285714285715,
+      "ms_p50": 165.93808308243752,
+      "ms_p95": 1556.7163002211598
+    },
+    "reachable": {
+      "n_paraphrase": 33,
+      "paraphrase_accepted": 11,
+      "n_miss": 30,
+      "miss_accepted": 0,
+      "near_miss_accepted": 0,
+      "n_near_miss": 0,
+      "accuracy": 0.6507936507936508,
+      "ms_p50": 949.0104579599574,
+      "ms_p95": 1800.7692461367694
+    },
+    "gray": {
+      "n_paraphrase": 28,
+      "paraphrase_accepted": 8,
+      "n_miss": 30,
+      "miss_accepted": 0,
+      "near_miss_accepted": 0,
+      "n_near_miss": 0,
+      "accuracy": 0.6551724137931034,
+      "ms_p50": 958.6708539864048,
+      "ms_p95": 1836.4892794867044
+    },
+    "above_high": {
+      "n_paraphrase": 5,
+      "paraphrase_accepted": 3,
+      "n_miss": 0,
+      "miss_accepted": 0,
+      "near_miss_accepted": 0,
+      "n_near_miss": 0,
+      "accuracy": 0.6,
+      "ms_p50": 161.7643329082057,
+      "ms_p95": 1482.9537746030837
+    }
+  },
+  "heldout": {
+    "all": {
+      "n_paraphrase": 15,
+      "paraphrase_accepted": 6,
+      "n_miss": 30,
+      "miss_accepted": 0,
+      "near_miss_accepted": 0,
+      "n_near_miss": 15,
+      "accuracy": 0.8,
+      "ms_p50": 162.57637494709343,
+      "ms_p95": 1329.0685172425583
+    },
+    "reachable": {
+      "n_paraphrase": 13,
+      "paraphrase_accepted": 6,
+      "n_miss": 10,
+      "miss_accepted": 0,
+      "near_miss_accepted": 0,
+      "n_near_miss": 0,
+      "accuracy": 0.6956521739130435,
+      "ms_p50": 166.43824998755008,
+      "ms_p95": 1338.2562336861156
+    },
+    "gray": {
+      "n_paraphrase": 10,
+      "paraphrase_accepted": 3,
+      "n_miss": 10,
+      "miss_accepted": 0,
+      "near_miss_accepted": 0,
+      "n_near_miss": 0,
+      "accuracy": 0.65,
+      "ms_p50": 851.2564999982715,
+      "ms_p95": 1339.4667419255711
+    },
+    "above_high": {
+      "n_paraphrase": 3,
+      "paraphrase_accepted": 3,
+      "n_miss": 0,
+      "miss_accepted": 0,
+      "near_miss_accepted": 0,
+      "n_near_miss": 0,
+      "accuracy": 1.0,
+      "ms_p50": 114.93887496180832,
+      "ms_p95": 161.2883124849759
+    }
+  },
+  "misses": [
+    {
+      "id": "A-par-01",
+      "type": "paraphrase",
+      "q1": "How many days do I have to return an unused item?",
+      "q2": "What is the time limit for sending back something I haven't used?",
+      "sim": 0.8687088489532471,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-02",
+      "type": "paraphrase",
+      "q1": "Can I return a sale item?",
+      "q2": "Are discounted items eligible for returns?",
+      "sim": 0.8635716438293457,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-03",
+      "type": "paraphrase",
+      "q1": "How long does a refund take?",
+      "q2": "When will the money get back to my card after a return?",
+      "sim": 0.8255504369735718,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-04",
+      "type": "paraphrase",
+      "q1": "Do you charge to ship a return?",
+      "q2": "Who pays for return postage?",
+      "sim": 0.8164867758750916,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-09",
+      "type": "paraphrase",
+      "q1": "How long does standard shipping take?",
+      "q2": "How many business days until a standard order arrives?",
+      "sim": 0.8716809749603271,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-10",
+      "type": "paraphrase",
+      "q1": "How fast is express shipping?",
+      "q2": "How long does express delivery take?",
+      "sim": 0.9352108836174011,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-12",
+      "type": "paraphrase",
+      "q1": "Do you ship to Canada?",
+      "q2": "Can I get an order delivered to Canada?",
+      "sim": 0.8676694631576538,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-15",
+      "type": "paraphrase",
+      "q1": "What is the cutoff for same-day shipping?",
+      "q2": "By what time must I order for it to ship the same day?",
+      "sim": 0.8040697574615479,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-17",
+      "type": "paraphrase",
+      "q1": "Can I change the shipping address?",
+      "q2": "Is it possible to update the delivery address before it ships?",
+      "sim": 0.8928889036178589,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-18",
+      "type": "paraphrase",
+      "q1": "Do you send tracking information?",
+      "q2": "Will I receive a tracking email once the package ships?",
+      "sim": 0.8316411375999451,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-19",
+      "type": "paraphrase",
+      "q1": "What does an order number look like?",
+      "q2": "What is the format of your order numbers?",
+      "sim": 0.896512508392334,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-22",
+      "type": "paraphrase",
+      "q1": "What is the warranty on Trailhead packs?",
+      "q2": "How long are Trailhead packs covered?",
+      "sim": 0.8567570447921753,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-24",
+      "type": "paraphrase",
+      "q1": "What does the warranty cover?",
+      "q2": "Which kinds of damage are covered by the warranty?",
+      "sim": 0.852267324924469,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-25",
+      "type": "paraphrase",
+      "q1": "How do I make a warranty claim?",
+      "q2": "What do I need to send to claim under warranty?",
+      "sim": 0.8863634467124939,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-26",
+      "type": "paraphrase",
+      "q1": "How much does a zipper repair cost?",
+      "q2": "What is the charge to fix a zipper on a pack?",
+      "sim": 0.9018118977546692,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-27",
+      "type": "paraphrase",
+      "q1": "How long does a zipper repair take?",
+      "q2": "How many business days does fixing a zipper take?",
+      "sim": 0.9590689539909363,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-30",
+      "type": "paraphrase",
+      "q1": "What happens if I lose a gift card?",
+      "q2": "Can a lost gift card be replaced?",
+      "sim": 0.8898875713348389,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-31",
+      "type": "paraphrase",
+      "q1": "Is Trail Club free to join?",
+      "q2": "Does it cost anything to become a Trail Club member?",
+      "sim": 0.8774864077568054,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-33",
+      "type": "paraphrase",
+      "q1": "Do Trail Club points expire?",
+      "q2": "How long are Trail Club points valid for?",
+      "sim": 0.9171244502067566,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-34",
+      "type": "paraphrase",
+      "q1": "When do Trail Club members get early sale access?",
+      "q2": "How far ahead of the public can members shop sales?",
+      "sim": 0.7781738638877869,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-35",
+      "type": "paraphrase",
+      "q1": "What are your store hours on Sunday?",
+      "q2": "When is the store open on Sundays?",
+      "sim": 0.8929952383041382,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-37",
+      "type": "paraphrase",
+      "q1": "Is the store open on December 25?",
+      "q2": "Are you open for business on December 25?",
+      "sim": 0.8864383101463318,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-38",
+      "type": "paraphrase",
+      "q1": "What time does the store close on December 24?",
+      "q2": "How late are you open on December 24?",
+      "sim": 0.8591165542602539,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-39",
+      "type": "paraphrase",
+      "q1": "Which payment methods do you accept?",
+      "q2": "What cards can I pay with?",
+      "sim": 0.8122694492340088,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-43",
+      "type": "paraphrase",
+      "q1": "When is phone support available?",
+      "q2": "What are the phone support hours?",
+      "sim": 0.8699790239334106,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-44",
+      "type": "paraphrase",
+      "q1": "How quickly does email support reply?",
+      "q2": "How long does it take to get an answer to a support email?",
+      "sim": 0.8904924988746643,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-47",
+      "type": "paraphrase",
+      "q1": "What is the Beacon Headlamp warranty?",
+      "q2": "How long is the Beacon Headlamp covered?",
+      "sim": 0.8372640609741211,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-48",
+      "type": "paraphrase",
+      "q1": "Does promo code SPRING10 need a minimum order?",
+      "q2": "Is there a minimum spend for code SPRING10?",
+      "sim": 0.8224271535873413,
+      "v_score": 0.0
+    },
+    {
+      "id": "A-par-49",
+      "type": "paraphrase",
+      "q1": "What does promo code TRAIL20 give?",
+      "q2": "What discount do I get with TRAIL20?",
+      "sim": 0.8934997320175171,
+      "v_score": 0.0
+    }
+  ]
+}

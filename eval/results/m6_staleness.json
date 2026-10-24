@@ -1,0 +1,1177 @@
+{
+  "model": "qwen2.5:7b",
+  "prompt": "v4",
+  "policy_v1": "/Users/pranjulyabajpai/src/genAI/03-semantic-cache/data/policy.md",
+  "policy_v2": "data/policy_v2.md",
+  "ttl_s": 604800.0,
+  "when": "2026-10-24T14:05:42+00:00",
+  "scenarios": {
+    "none": {
+      "summary": {
+        "changed": {
+          "n": 20,
+          "stale": 20,
+          "fresh": 0,
+          "unclear": 0,
+          "hits": 20
+        },
+        "controls": {
+          "n": 10,
+          "hits": 10,
+          "correct": 10
+        },
+        "decisions": {
+          "hit": 30
+        }
+      },
+      "results": [
+        {
+          "id": "C-01",
+          "changed": true,
+          "decision": "hit",
+          "answer": "You have 30 days to return an unused item.",
+          "outcome": "stale",
+          "matched": "How many days do I have to return an unused item?"
+        },
+        {
+          "id": "C-02",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Unused items in original packaging can be returned within 30 days of delivery for a full refund.",
+          "outcome": "stale",
+          "matched": "What is the return window for unused items in original packaging?"
+        },
+        {
+          "id": "C-03",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Within 5 business days after we receive the item.",
+          "outcome": "stale",
+          "matched": "How long until a refund reaches the original payment method?"
+        },
+        {
+          "id": "C-04",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Refunds go to the original payment method within 5 business days after we receive the item.",
+          "outcome": "stale",
+          "matched": "After you receive a return, how many business days does the refund take?"
+        },
+        {
+          "id": "C-05",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Orders over $75 qualify for free standard shipping.",
+          "outcome": "stale",
+          "matched": "What order total qualifies for free standard shipping?"
+        },
+        {
+          "id": "C-06",
+          "changed": true,
+          "decision": "hit",
+          "answer": "You need to spend $75 or more to get free standard shipping.",
+          "outcome": "stale",
+          "matched": "How much do I need to spend to get free standard shipping?"
+        },
+        {
+          "id": "C-07",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Orders placed before 2 pm Eastern time on a business day ship the same day.",
+          "outcome": "stale",
+          "matched": "What is the cutoff time for same-day shipping?"
+        },
+        {
+          "id": "C-08",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Orders placed before 2 pm Eastern time on a business day ship the same day.",
+          "outcome": "stale",
+          "matched": "Until what time can I order and still have it ship today?"
+        },
+        {
+          "id": "C-09",
+          "changed": true,
+          "decision": "hit",
+          "answer": "An order can be cancelled within 1 hour of placing it.",
+          "outcome": "stale",
+          "matched": "How long after placing an order can it be cancelled?"
+        },
+        {
+          "id": "C-10",
+          "changed": true,
+          "decision": "hit",
+          "answer": "An order can be cancelled within 1 hour of placing it.",
+          "outcome": "stale",
+          "matched": "What is the cancellation window for new orders?"
+        },
+        {
+          "id": "C-11",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Within 14 days of purchase.",
+          "outcome": "stale",
+          "matched": "How many days after purchase can I ask for a price adjustment?"
+        },
+        {
+          "id": "C-12",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Price adjustment requests can be made within 14 days of purchase.",
+          "outcome": "stale",
+          "matched": "What is the time limit for a price adjustment request?"
+        },
+        {
+          "id": "C-13",
+          "changed": true,
+          "decision": "hit",
+          "answer": "2 years.",
+          "outcome": "stale",
+          "matched": "How long is the warranty on Summit tents?"
+        },
+        {
+          "id": "C-14",
+          "changed": true,
+          "decision": "hit",
+          "answer": "The warranty period for the Summit Tent 4P is 2 years.",
+          "outcome": "stale",
+          "matched": "What is the warranty period for the Summit Tent 4P?"
+        },
+        {
+          "id": "C-15",
+          "changed": true,
+          "decision": "hit",
+          "answer": "The maximum amount for a gift card is $500.",
+          "outcome": "stale",
+          "matched": "What is the maximum amount for a gift card?"
+        },
+        {
+          "id": "C-16",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Yes. Gift cards range up to $500.",
+          "outcome": "stale",
+          "matched": "What is the largest gift card I can buy?"
+        },
+        {
+          "id": "C-17",
+          "changed": true,
+          "decision": "hit",
+          "answer": "500 points can be redeemed for a $10 reward.",
+          "outcome": "stale",
+          "matched": "How many Trail Club points do I need for a $10 reward?"
+        },
+        {
+          "id": "C-18",
+          "changed": true,
+          "decision": "hit",
+          "answer": "500 points make a $10 reward.",
+          "outcome": "stale",
+          "matched": "How many points make a $10 reward?"
+        },
+        {
+          "id": "C-19",
+          "changed": true,
+          "decision": "hit",
+          "answer": "$349.",
+          "outcome": "stale",
+          "matched": "How much does the Summit Tent 2P cost?"
+        },
+        {
+          "id": "C-20",
+          "changed": true,
+          "decision": "hit",
+          "answer": "The price of tent ST-2 is $349.",
+          "outcome": "stale",
+          "matched": "What is the price of tent ST-2?"
+        },
+        {
+          "id": "C-21",
+          "changed": false,
+          "decision": "hit",
+          "answer": "Exchanges for a different size or colour are free within 30 days of delivery.",
+          "outcome": "correct",
+          "matched": "How many days do I have to exchange an item for a different size?"
+        },
+        {
+          "id": "C-22",
+          "changed": false,
+          "decision": "hit",
+          "answer": "5 to 7 business days.",
+          "outcome": "correct",
+          "matched": "How many business days does standard shipping take?"
+        },
+        {
+          "id": "C-23",
+          "changed": false,
+          "decision": "hit",
+          "answer": "$14.95.",
+          "outcome": "correct",
+          "matched": "What does express shipping cost?"
+        },
+        {
+          "id": "C-24",
+          "changed": false,
+          "decision": "hit",
+          "answer": "5 years.",
+          "outcome": "correct",
+          "matched": "How long is the warranty on Trailhead packs?"
+        },
+        {
+          "id": "C-25",
+          "changed": false,
+          "decision": "hit",
+          "answer": "15 percent of the price.",
+          "outcome": "correct",
+          "matched": "What restocking fee applies to an opened Summit tent?"
+        },
+        {
+          "id": "C-26",
+          "changed": false,
+          "decision": "hit",
+          "answer": "You have 15 days to return electronics.",
+          "outcome": "correct",
+          "matched": "How many days do I have to return electronics?"
+        },
+        {
+          "id": "C-27",
+          "changed": false,
+          "decision": "hit",
+          "answer": "11 am. The store opens at 11 am on Sundays.",
+          "outcome": "correct",
+          "matched": "What time does the store open on Sunday?"
+        },
+        {
+          "id": "C-28",
+          "changed": false,
+          "decision": "hit",
+          "answer": "207-555-0142",
+          "outcome": "correct",
+          "matched": "What is the phone number for support?"
+        },
+        {
+          "id": "C-29",
+          "changed": false,
+          "decision": "hit",
+          "answer": "$12.95",
+          "outcome": "correct",
+          "matched": "How much does standard shipping to Canada cost?"
+        },
+        {
+          "id": "C-30",
+          "changed": false,
+          "decision": "hit",
+          "answer": "A zipper repair on a Trailhead pack costs a flat $12.",
+          "outcome": "correct",
+          "matched": "How much does a zipper repair on a Trailhead pack cost?"
+        }
+      ]
+    },
+    "bump": {
+      "summary": {
+        "changed": {
+          "n": 20,
+          "stale": 0,
+          "fresh": 20,
+          "unclear": 0,
+          "hits": 0
+        },
+        "controls": {
+          "n": 10,
+          "hits": 0,
+          "correct": 10
+        },
+        "decisions": {
+          "miss": 29,
+          "miss_entity": 1
+        }
+      },
+      "results": [
+        {
+          "id": "C-01",
+          "changed": true,
+          "decision": "miss",
+          "answer": "You have 45 days to return an unused item.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-02",
+          "changed": true,
+          "decision": "miss",
+          "answer": "Unused items in original packaging can be returned within 45 days of delivery for a full refund.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-03",
+          "changed": true,
+          "decision": "miss",
+          "answer": "3 business days",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-04",
+          "changed": true,
+          "decision": "miss",
+          "answer": "Refunds go to the original payment method within 3 business days after we receive the item.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-05",
+          "changed": true,
+          "decision": "miss",
+          "answer": "Orders over $60 qualify for free standard shipping.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-06",
+          "changed": true,
+          "decision": "miss",
+          "answer": "You need to spend $60 or more to get free standard shipping.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-07",
+          "changed": true,
+          "decision": "miss",
+          "answer": "Orders placed before 3 pm Eastern time on a business day ship the same day.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-08",
+          "changed": true,
+          "decision": "miss",
+          "answer": "Orders placed before 3 pm Eastern time on a business day ship the same day.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-09",
+          "changed": true,
+          "decision": "miss",
+          "answer": "An order can be cancelled within 2 hours of placing it.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-10",
+          "changed": true,
+          "decision": "miss",
+          "answer": "An order can be cancelled within 2 hours of placing it.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-11",
+          "changed": true,
+          "decision": "miss",
+          "answer": "Within 7 days of purchase.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-12",
+          "changed": true,
+          "decision": "miss",
+          "answer": "The time limit for a price adjustment request is within 7 days of purchase.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-13",
+          "changed": true,
+          "decision": "miss",
+          "answer": "3 years.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-14",
+          "changed": true,
+          "decision": "miss_entity",
+          "answer": "The warranty period for the Summit Tent 4P is 3 years.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-15",
+          "changed": true,
+          "decision": "miss",
+          "answer": "The maximum amount for a gift card is $300.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-16",
+          "changed": true,
+          "decision": "miss",
+          "answer": "Yes. Gift cards range up to $300.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-17",
+          "changed": true,
+          "decision": "miss",
+          "answer": "400 points can be redeemed for a $10 reward.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-18",
+          "changed": true,
+          "decision": "miss",
+          "answer": "400 points make a $10 reward.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-19",
+          "changed": true,
+          "decision": "miss",
+          "answer": "$329.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-20",
+          "changed": true,
+          "decision": "miss",
+          "answer": "The price of tent ST-2 is $329.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-21",
+          "changed": false,
+          "decision": "miss",
+          "answer": "Exchanges for a different size or colour are free within 30 days of delivery.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-22",
+          "changed": false,
+          "decision": "miss",
+          "answer": "5 to 7 business days.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-23",
+          "changed": false,
+          "decision": "miss",
+          "answer": "$14.95.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-24",
+          "changed": false,
+          "decision": "miss",
+          "answer": "5 years.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-25",
+          "changed": false,
+          "decision": "miss",
+          "answer": "15 percent of the price.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-26",
+          "changed": false,
+          "decision": "miss",
+          "answer": "You have 15 days to return electronics.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-27",
+          "changed": false,
+          "decision": "miss",
+          "answer": "11 am",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-28",
+          "changed": false,
+          "decision": "miss",
+          "answer": "207-555-0142",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-29",
+          "changed": false,
+          "decision": "miss",
+          "answer": "$12.95",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-30",
+          "changed": false,
+          "decision": "miss",
+          "answer": "A zipper repair on a Trailhead pack costs a flat $12.",
+          "outcome": "correct",
+          "matched": null
+        }
+      ]
+    },
+    "topic": {
+      "summary": {
+        "changed": {
+          "n": 20,
+          "stale": 9,
+          "fresh": 11,
+          "unclear": 0,
+          "hits": 9
+        },
+        "controls": {
+          "n": 10,
+          "hits": 10,
+          "correct": 10
+        },
+        "decisions": {
+          "hit": 19,
+          "miss": 10,
+          "miss_entity": 1
+        }
+      },
+      "results": [
+        {
+          "id": "C-01",
+          "changed": true,
+          "decision": "hit",
+          "answer": "You have 30 days to return an unused item.",
+          "outcome": "stale",
+          "matched": "How many days do I have to return an unused item?"
+        },
+        {
+          "id": "C-02",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Unused items in original packaging can be returned within 30 days of delivery for a full refund.",
+          "outcome": "stale",
+          "matched": "What is the return window for unused items in original packaging?"
+        },
+        {
+          "id": "C-03",
+          "changed": true,
+          "decision": "miss",
+          "answer": "3 business days",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-04",
+          "changed": true,
+          "decision": "miss",
+          "answer": "Refunds go to the original payment method within 3 business days after we receive the item.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-05",
+          "changed": true,
+          "decision": "miss",
+          "answer": "Orders over $60 qualify for free standard shipping.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-06",
+          "changed": true,
+          "decision": "hit",
+          "answer": "You need to spend $75 or more to get free standard shipping.",
+          "outcome": "stale",
+          "matched": "How much do I need to spend to get free standard shipping?"
+        },
+        {
+          "id": "C-07",
+          "changed": true,
+          "decision": "miss",
+          "answer": "Orders placed before 3 pm Eastern time on a business day ship the same day.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-08",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Orders placed before 2 pm Eastern time on a business day ship the same day.",
+          "outcome": "stale",
+          "matched": "Until what time can I order and still have it ship today?"
+        },
+        {
+          "id": "C-09",
+          "changed": true,
+          "decision": "hit",
+          "answer": "An order can be cancelled within 1 hour of placing it.",
+          "outcome": "stale",
+          "matched": "How long after placing an order can it be cancelled?"
+        },
+        {
+          "id": "C-10",
+          "changed": true,
+          "decision": "miss",
+          "answer": "An order can be cancelled within 2 hours of placing it.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-11",
+          "changed": true,
+          "decision": "miss",
+          "answer": "Within 7 days of purchase.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-12",
+          "changed": true,
+          "decision": "miss",
+          "answer": "The time limit for a price adjustment request is within 7 days of purchase.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-13",
+          "changed": true,
+          "decision": "miss_entity",
+          "answer": "3 years.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-14",
+          "changed": true,
+          "decision": "hit",
+          "answer": "The warranty period for the Summit Tent 4P is 2 years.",
+          "outcome": "stale",
+          "matched": "What is the warranty period for the Summit Tent 4P?"
+        },
+        {
+          "id": "C-15",
+          "changed": true,
+          "decision": "miss",
+          "answer": "The maximum amount for a gift card is $300.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-16",
+          "changed": true,
+          "decision": "hit",
+          "answer": "Yes. Gift cards range up to $500.",
+          "outcome": "stale",
+          "matched": "What is the largest gift card I can buy?"
+        },
+        {
+          "id": "C-17",
+          "changed": true,
+          "decision": "miss",
+          "answer": "400 points can be redeemed for a $10 reward.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-18",
+          "changed": true,
+          "decision": "hit",
+          "answer": "500 points make a $10 reward.",
+          "outcome": "stale",
+          "matched": "How many points make a $10 reward?"
+        },
+        {
+          "id": "C-19",
+          "changed": true,
+          "decision": "miss",
+          "answer": "$329.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-20",
+          "changed": true,
+          "decision": "hit",
+          "answer": "The price of tent ST-2 is $349.",
+          "outcome": "stale",
+          "matched": "What is the price of tent ST-2?"
+        },
+        {
+          "id": "C-21",
+          "changed": false,
+          "decision": "hit",
+          "answer": "Exchanges for a different size or colour are free within 30 days of delivery.",
+          "outcome": "correct",
+          "matched": "How many days do I have to exchange an item for a different size?"
+        },
+        {
+          "id": "C-22",
+          "changed": false,
+          "decision": "hit",
+          "answer": "5 to 7 business days.",
+          "outcome": "correct",
+          "matched": "How many business days does standard shipping take?"
+        },
+        {
+          "id": "C-23",
+          "changed": false,
+          "decision": "hit",
+          "answer": "$14.95.",
+          "outcome": "correct",
+          "matched": "What does express shipping cost?"
+        },
+        {
+          "id": "C-24",
+          "changed": false,
+          "decision": "hit",
+          "answer": "5 years.",
+          "outcome": "correct",
+          "matched": "How long is the warranty on Trailhead packs?"
+        },
+        {
+          "id": "C-25",
+          "changed": false,
+          "decision": "hit",
+          "answer": "15 percent of the price.",
+          "outcome": "correct",
+          "matched": "What restocking fee applies to an opened Summit tent?"
+        },
+        {
+          "id": "C-26",
+          "changed": false,
+          "decision": "hit",
+          "answer": "You have 15 days to return electronics.",
+          "outcome": "correct",
+          "matched": "How many days do I have to return electronics?"
+        },
+        {
+          "id": "C-27",
+          "changed": false,
+          "decision": "hit",
+          "answer": "11 am. The store opens at 11 am on Sundays.",
+          "outcome": "correct",
+          "matched": "What time does the store open on Sunday?"
+        },
+        {
+          "id": "C-28",
+          "changed": false,
+          "decision": "hit",
+          "answer": "207-555-0142",
+          "outcome": "correct",
+          "matched": "What is the phone number for support?"
+        },
+        {
+          "id": "C-29",
+          "changed": false,
+          "decision": "hit",
+          "answer": "$12.95",
+          "outcome": "correct",
+          "matched": "How much does standard shipping to Canada cost?"
+        },
+        {
+          "id": "C-30",
+          "changed": false,
+          "decision": "hit",
+          "answer": "A zipper repair on a Trailhead pack costs a flat $12.",
+          "outcome": "correct",
+          "matched": "How much does a zipper repair on a Trailhead pack cost?"
+        }
+      ],
+      "min_sim": 0.85,
+      "deleted": 11
+    },
+    "ttl": {
+      "summary": {
+        "changed": {
+          "n": 20,
+          "stale": 0,
+          "fresh": 20,
+          "unclear": 0,
+          "hits": 0
+        },
+        "controls": {
+          "n": 10,
+          "hits": 0,
+          "correct": 10
+        },
+        "decisions": {
+          "miss_expired": 30
+        }
+      },
+      "results": [
+        {
+          "id": "C-01",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "You have 45 days to return an unused item.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-02",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "Unused items in original packaging can be returned within 45 days of delivery for a full refund.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-03",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "3 business days",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-04",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "Refunds go to the original payment method within 3 business days after we receive the item.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-05",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "Orders over $60 qualify for free standard shipping.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-06",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "You need to spend $60 or more to get free standard shipping.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-07",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "Orders placed before 3 pm Eastern time on a business day ship the same day.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-08",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "Orders placed before 3 pm Eastern time on a business day ship the same day.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-09",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "An order can be cancelled within 2 hours of placing it.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-10",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "An order can be cancelled within 2 hours of placing it.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-11",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "Within 7 days of purchase.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-12",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "The time limit for a price adjustment request is within 7 days of purchase.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-13",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "3 years.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-14",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "The warranty period for the Summit Tent 4P is 3 years.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-15",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "The maximum amount for a gift card is $300.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-16",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "Yes. Gift cards range up to $300.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-17",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "400 points can be redeemed for a $10 reward.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-18",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "400 points make a $10 reward.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-19",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "$329.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-20",
+          "changed": true,
+          "decision": "miss_expired",
+          "answer": "The price of tent ST-2 is $329.",
+          "outcome": "fresh",
+          "matched": null
+        },
+        {
+          "id": "C-21",
+          "changed": false,
+          "decision": "miss_expired",
+          "answer": "Exchanges for a different size or colour are free within 30 days of delivery.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-22",
+          "changed": false,
+          "decision": "miss_expired",
+          "answer": "5 to 7 business days.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-23",
+          "changed": false,
+          "decision": "miss_expired",
+          "answer": "$14.95.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-24",
+          "changed": false,
+          "decision": "miss_expired",
+          "answer": "5 years.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-25",
+          "changed": false,
+          "decision": "miss_expired",
+          "answer": "15 percent of the price.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-26",
+          "changed": false,
+          "decision": "miss_expired",
+          "answer": "You have 15 days to return electronics.",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-27",
+          "changed": false,
+          "decision": "miss_expired",
+          "answer": "11 am",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-28",
+          "changed": false,
+          "decision": "miss_expired",
+          "answer": "207-555-0142",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-29",
+          "changed": false,
+          "decision": "miss_expired",
+          "answer": "$12.95",
+          "outcome": "correct",
+          "matched": null
+        },
+        {
+          "id": "C-30",
+          "changed": false,
+          "decision": "miss_expired",
+          "answer": "A zipper repair on a Trailhead pack costs a flat $12.",
+          "outcome": "correct",
+          "matched": null
+        }
+      ],
+      "ttl_s": 604800.0
+    }
+  },
+  "first_pass_v1": {
+    "changed": {
+      "n": 20,
+      "stale": 20,
+      "fresh": 0,
+      "unclear": 0,
+      "hits": 0
+    },
+    "controls": {
+      "n": 10,
+      "hits": 0,
+      "correct": 10
+    },
+    "decisions": {
+      "miss": 29,
+      "miss_entity": 1
+    }
+  },
+  "topic_table": [
+    {
+      "min_sim": 0.4,
+      "covered": 20,
+      "targets": 20,
+      "controls_deleted": 10,
+      "controls": 10,
+      "other_changed_deleted": 20
+    },
+    {
+      "min_sim": 0.45,
+      "covered": 20,
+      "targets": 20,
+      "controls_deleted": 10,
+      "controls": 10,
+      "other_changed_deleted": 20
+    },
+    {
+      "min_sim": 0.5,
+      "covered": 20,
+      "targets": 20,
+      "controls_deleted": 10,
+      "controls": 10,
+      "other_changed_deleted": 20
+    },
+    {
+      "min_sim": 0.55,
+      "covered": 20,
+      "targets": 20,
+      "controls_deleted": 10,
+      "controls": 10,
+      "other_changed_deleted": 19
+    },
+    {
+      "min_sim": 0.6,
+      "covered": 20,
+      "targets": 20,
+      "controls_deleted": 9,
+      "controls": 10,
+      "other_changed_deleted": 19
+    },
+    {
+      "min_sim": 0.65,
+      "covered": 19,
+      "targets": 20,
+      "controls_deleted": 8,
+      "controls": 10,
+      "other_changed_deleted": 15
+    },
+    {
+      "min_sim": 0.7,
+      "covered": 19,
+      "targets": 20,
+      "controls_deleted": 6,
+      "controls": 10,
+      "other_changed_deleted": 8
+    },
+    {
+      "min_sim": 0.75,
+      "covered": 17,
+      "targets": 20,
+      "controls_deleted": 3,
+      "controls": 10,
+      "other_changed_deleted": 3
+    },
+    {
+      "min_sim": 0.8,
+      "covered": 15,
+      "targets": 20,
+      "controls_deleted": 1,
+      "controls": 10,
+      "other_changed_deleted": 0
+    },
+    {
+      "min_sim": 0.85,
+      "covered": 11,
+      "targets": 20,
+      "controls_deleted": 0,
+      "controls": 10,
+      "other_changed_deleted": 0
+    },
+    {
+      "min_sim": 0.9,
+      "covered": 6,
+      "targets": 20,
+      "controls_deleted": 0,
+      "controls": 10,
+      "other_changed_deleted": 0
+    },
+    {
+      "min_sim": 0.95,
+      "covered": 3,
+      "targets": 20,
+      "controls_deleted": 0,
+      "controls": 10,
+      "other_changed_deleted": 0
+    }
+  ],
+  "min_sim": 0.85
+}

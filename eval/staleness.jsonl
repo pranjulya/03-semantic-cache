@@ -1,0 +1,30 @@
+{"id": "C-01", "question": "How many days do I have to return an unused item?", "fact": "return_days", "changed": true, "v1": "30 days", "v2": "45 days", "topic": "return window"}
+{"id": "C-02", "question": "What is the return window for unused items in original packaging?", "fact": "return_days", "changed": true, "v1": "30 days", "v2": "45 days", "topic": "return window"}
+{"id": "C-03", "question": "How long until a refund reaches the original payment method?", "fact": "refund_days", "changed": true, "v1": "5 business days", "v2": "3 business days", "topic": "how long a refund takes"}
+{"id": "C-04", "question": "After you receive a return, how many business days does the refund take?", "fact": "refund_days", "changed": true, "v1": "5 business days", "v2": "3 business days", "topic": "how long a refund takes"}
+{"id": "C-05", "question": "What order total qualifies for free standard shipping?", "fact": "free_ship_min", "changed": true, "v1": "$75", "v2": "$60", "topic": "minimum order for free shipping"}
+{"id": "C-06", "question": "How much do I need to spend to get free standard shipping?", "fact": "free_ship_min", "changed": true, "v1": "$75", "v2": "$60", "topic": "minimum order for free shipping"}
+{"id": "C-07", "question": "What is the cutoff time for same-day shipping?", "fact": "ship_cutoff", "changed": true, "v1": "2 pm", "v2": "3 pm", "topic": "same-day shipping cutoff time"}
+{"id": "C-08", "question": "Until what time can I order and still have it ship today?", "fact": "ship_cutoff", "changed": true, "v1": "2 pm", "v2": "3 pm", "topic": "same-day shipping cutoff time"}
+{"id": "C-09", "question": "How long after placing an order can it be cancelled?", "fact": "cancel_window", "changed": true, "v1": "1 hour", "v2": "2 hours", "topic": "order cancellation window"}
+{"id": "C-10", "question": "What is the cancellation window for new orders?", "fact": "cancel_window", "changed": true, "v1": "1 hour", "v2": "2 hours", "topic": "order cancellation window"}
+{"id": "C-11", "question": "How many days after purchase can I ask for a price adjustment?", "fact": "price_adj_days", "changed": true, "v1": "14 days", "v2": "7 days", "topic": "price adjustment period"}
+{"id": "C-12", "question": "What is the time limit for a price adjustment request?", "fact": "price_adj_days", "changed": true, "v1": "14 days", "v2": "7 days", "topic": "price adjustment period"}
+{"id": "C-13", "question": "How long is the warranty on Summit tents?", "fact": "tent_warranty", "changed": true, "v1": "2 years", "v2": "3 years", "topic": "tent warranty length"}
+{"id": "C-14", "question": "What is the warranty period for the Summit Tent 4P?", "fact": "tent_warranty", "changed": true, "v1": "2 years", "v2": "3 years", "topic": "tent warranty length"}
+{"id": "C-15", "question": "What is the maximum amount for a gift card?", "fact": "gift_card_max", "changed": true, "v1": "$500", "v2": "$300", "topic": "maximum gift card amount"}
+{"id": "C-16", "question": "What is the largest gift card I can buy?", "fact": "gift_card_max", "changed": true, "v1": "$500", "v2": "$300", "topic": "maximum gift card amount"}
+{"id": "C-17", "question": "How many Trail Club points do I need for a $10 reward?", "fact": "points_per_reward", "changed": true, "v1": "500 points", "v2": "400 points", "topic": "Trail Club points for a reward"}
+{"id": "C-18", "question": "How many points make a $10 reward?", "fact": "points_per_reward", "changed": true, "v1": "500 points", "v2": "400 points", "topic": "Trail Club points for a reward"}
+{"id": "C-19", "question": "How much does the Summit Tent 2P cost?", "fact": "st2_price", "changed": true, "v1": "$349", "v2": "$329", "topic": "Summit Tent 2P price"}
+{"id": "C-20", "question": "What is the price of tent ST-2?", "fact": "st2_price", "changed": true, "v1": "$349", "v2": "$329", "topic": "Summit Tent 2P price"}
+{"id": "C-21", "question": "How many days do I have to exchange an item for a different size?", "fact": "exchange_days", "changed": false, "v1": "30 days", "v2": "30 days"}
+{"id": "C-22", "question": "How many business days does standard shipping take?", "fact": "ship_std_time", "changed": false, "v1": "5 to 7 business days", "v2": "5 to 7 business days"}
+{"id": "C-23", "question": "What does express shipping cost?", "fact": "express_cost", "changed": false, "v1": "$14.95", "v2": "$14.95"}
+{"id": "C-24", "question": "How long is the warranty on Trailhead packs?", "fact": "pack_warranty", "changed": false, "v1": "5 years", "v2": "5 years"}
+{"id": "C-25", "question": "What restocking fee applies to an opened Summit tent?", "fact": "restock_pct", "changed": false, "v1": "15 percent", "v2": "15 percent"}
+{"id": "C-26", "question": "How many days do I have to return electronics?", "fact": "electronics_return", "changed": false, "v1": "15 days", "v2": "15 days"}
+{"id": "C-27", "question": "What time does the store open on Sunday?", "fact": "sunday_open", "changed": false, "v1": "11 am", "v2": "11 am"}
+{"id": "C-28", "question": "What is the phone number for support?", "fact": "support_phone", "changed": false, "v1": "207-555-0142", "v2": "207-555-0142"}
+{"id": "C-29", "question": "How much does standard shipping to Canada cost?", "fact": "canada_cost", "changed": false, "v1": "$12.95", "v2": "$12.95"}
+{"id": "C-30", "question": "How much does a zipper repair on a Trailhead pack cost?", "fact": "zipper_fee", "changed": false, "v1": "$12", "v2": "$12"}

@@ -1,0 +1,261 @@
+{
+  "run_id": "traffic_60-semantic-0.81-qwen2.5:7b-1792838279",
+  "traffic": "eval/traffic_60.jsonl",
+  "mode": "single-threshold semantic cache",
+  "threshold": 0.81,
+  "embedder": "BAAI/bge-small-en-v1.5",
+  "model": "qwen2.5:7b",
+  "prompt": "v4",
+  "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "policy_version": "v1",
+  "when": "2026-10-24T10:38:50+00:00",
+  "elapsed_s": 50.57715087500401,
+  "failed": [],
+  "n": 200,
+  "decisions": {
+    "miss": 53,
+    "hit": 147
+  },
+  "latency_by_decision": {
+    "miss": {
+      "n": 53,
+      "p50": 941.0204580053687,
+      "p95": 1866.5664167841894
+    },
+    "hit": {
+      "n": 147,
+      "p50": 8.391834096983075,
+      "p95": 35.49732884857803
+    }
+  },
+  "latency_ms": {
+    "mean": 252.12065938860178,
+    "p50": 12.950875039678067,
+    "p95": 1282.1835353912313
+  },
+  "llm_ms": {
+    "p50": 901.5939170494676,
+    "p95": 1853.4715171437708
+  },
+  "llm_total_s": 47.27878420741763,
+  "wall_total_s": 50.424131877720356,
+  "quality": {
+    "requests": 200,
+    "hits": 147,
+    "hit_rate": 0.735,
+    "false_hits": 79,
+    "false_hit_rate": 0.5374149659863946,
+    "false_hit_share_of_requests": 0.395,
+    "repeats": 120,
+    "repeat_correct_hits": 68,
+    "repeat_recall": 0.5666666666666667,
+    "false_hit_examples": [
+      {
+        "id": "t60-009",
+        "asked": "Do I pay shipping if I spend $55?",
+        "asked_intent": "free_ship_total:55",
+        "matched": "Do I pay shipping if I spend $80?",
+        "matched_intent": "free_ship_total:80",
+        "similarity": 0.8927162885665894
+      },
+      {
+        "id": "t60-012",
+        "asked": "Will a $30 cart qualify for free delivery?",
+        "asked_intent": "free_ship_total:30",
+        "matched": "Will a $55 cart qualify for free delivery?",
+        "matched_intent": "free_ship_total:55",
+        "similarity": 0.9222772717475891
+      },
+      {
+        "id": "t60-020",
+        "asked": "SKU of the Ridgeline Sleeping Bag?",
+        "asked_intent": "sku_of:Ridgeline Sleeping Bag",
+        "matched": "What is the return window for the Ridgeline Sleeping Bag?",
+        "matched_intent": "return_window_of:Ridgeline Sleeping Bag",
+        "similarity": 0.8733800649642944
+      },
+      {
+        "id": "t60-022",
+        "asked": "I bought something 7 days ago and the price dropped. Can I get an adjustment?",
+        "asked_intent": "price_adj_after:7",
+        "matched": "Can I get a price adjustment 30 days after buying?",
+        "matched_intent": "price_adj_after:30",
+        "similarity": 0.8712107539176941
+      },
+      {
+        "id": "t60-023",
+        "asked": "I bought something 10 days ago and the price dropped. Can I get an adjustment?",
+        "asked_intent": "price_adj_after:10",
+        "matched": "Can I get a price adjustment 30 days after buying?",
+        "matched_intent": "price_adj_after:30",
+        "similarity": 0.8710196018218994
+      },
+      {
+        "id": "t60-026",
+        "asked": "Is a price adjustment possible 10 days after purchase?",
+        "asked_intent": "price_adj_after:10",
+        "matched": "Can I get a price adjustment 30 days after buying?",
+        "matched_intent": "price_adj_after:30",
+        "similarity": 0.9096047282218933
+      },
+      {
+        "id": "t60-033",
+        "asked": "Is a $5 gift card allowed?",
+        "asked_intent": "gift_amount:5",
+        "matched": "Is a $25 gift card allowed?",
+        "matched_intent": "gift_amount:25",
+        "similarity": 0.8734297752380371
+      },
+      {
+        "id": "t60-034",
+        "asked": "I bought something 7 days ago and the price dropped. Can I get an adjustment?",
+        "asked_intent": "price_adj_after:7",
+        "matched": "Can I get a price adjustment 30 days after buying?",
+        "matched_intent": "price_adj_after:30",
+        "similarity": 0.8712107539176941
+      },
+      {
+        "id": "t60-042",
+        "asked": "Can I get a price adjustment 7 days after buying?",
+        "asked_intent": "price_adj_after:7",
+        "matched": "Can I get a price adjustment 30 days after buying?",
+        "matched_intent": "price_adj_after:30",
+        "similarity": 0.9172528386116028
+      },
+      {
+        "id": "t60-043",
+        "asked": "Is a $5 gift card allowed?",
+        "asked_intent": "gift_amount:5",
+        "matched": "Is a $25 gift card allowed?",
+        "matched_intent": "gift_amount:25",
+        "similarity": 0.8734297752380371
+      },
+      {
+        "id": "t60-045",
+        "asked": "Can I get a price adjustment 7 days after buying?",
+        "asked_intent": "price_adj_after:7",
+        "matched": "Can I get a price adjustment 30 days after buying?",
+        "matched_intent": "price_adj_after:30",
+        "similarity": 0.9172528386116028
+      },
+      {
+        "id": "t60-047",
+        "asked": "Will a $70 cart qualify for free delivery?",
+        "asked_intent": "free_ship_total:70",
+        "matched": "Will a $55 cart qualify for free delivery?",
+        "matched_intent": "free_ship_total:55",
+        "similarity": 0.9283503293991089
+      },
+      {
+        "id": "t60-051",
+        "asked": "Is a $5 gift card allowed?",
+        "asked_intent": "gift_amount:5",
+        "matched": "Is a $25 gift card allowed?",
+        "matched_intent": "gift_amount:25",
+        "similarity": 0.8734297752380371
+      },
+      {
+        "id": "t60-056",
+        "asked": "If I order at 7 pm Eastern, does it ship today?",
+        "asked_intent": "ship_time_of_day:7 pm",
+        "matched": "If I order at 1 pm Eastern, does it ship today?",
+        "matched_intent": "ship_time_of_day:1 pm",
+        "similarity": 0.9480794668197632
+      },
+      {
+        "id": "t60-059",
+        "asked": "Will a $30 cart qualify for free delivery?",
+        "asked_intent": "free_ship_total:30",
+        "matched": "Will a $55 cart qualify for free delivery?",
+        "matched_intent": "free_ship_total:55",
+        "similarity": 0.9222772717475891
+      },
+      {
+        "id": "t60-061",
+        "asked": "What is the tax on $100 of goods bought in the store?",
+        "asked_intent": "tax_on:100",
+        "matched": "Sales tax on a $200 item bought at the store?",
+        "matched_intent": "tax_on:200",
+        "similarity": 0.817352294921875
+      },
+      {
+        "id": "t60-063",
+        "asked": "Will an order placed at 7 pm Eastern go out the same day?",
+        "asked_intent": "ship_time_of_day:7 pm",
+        "matched": "If I order at 1 pm Eastern, does it ship today?",
+        "matched_intent": "ship_time_of_day:1 pm",
+        "similarity": 0.8361610174179077
+      },
+      {
+        "id": "t60-065",
+        "asked": "Is there a restocking fee when returning an opened Summit Tent 2P?",
+        "asked_intent": "restock_of:Summit Tent 2P",
+        "matched": "What is the return window for the Summit Tent 2P?",
+        "matched_intent": "return_window_of:Summit Tent 2P",
+        "similarity": 0.8755034804344177
+      },
+      {
+        "id": "t60-069",
+        "asked": "Is a price adjustment possible 2 days after purchase?",
+        "asked_intent": "price_adj_after:2",
+        "matched": "Can I get a price adjustment 30 days after buying?",
+        "matched_intent": "price_adj_after:30",
+        "similarity": 0.9051945805549622
+      },
+      {
+        "id": "t60-073",
+        "asked": "Is a $5 gift card allowed?",
+        "asked_intent": "gift_amount:5",
+        "matched": "Is a $25 gift card allowed?",
+        "matched_intent": "gift_amount:25",
+        "similarity": 0.8734297752380371
+      },
+      {
+        "id": "t60-074",
+        "asked": "Is a return still possible 7 days after delivery?",
+        "asked_intent": "return_after_days:7",
+        "matched": "Is a return still possible 10 days after delivery?",
+        "matched_intent": "return_after_days:10",
+        "similarity": 0.9180709719657898
+      },
+      {
+        "id": "t60-076",
+        "asked": "Is standard shipping free on a $75 order?",
+        "asked_intent": "free_ship_total:75",
+        "matched": "Is standard shipping free on a $30 order?",
+        "matched_intent": "free_ship_total:30",
+        "similarity": 0.9140470623970032
+      },
+      {
+        "id": "t60-085",
+        "asked": "Is standard shipping free on a $80 order?",
+        "asked_intent": "free_ship_total:80",
+        "matched": "Is standard shipping free on a $30 order?",
+        "matched_intent": "free_ship_total:30",
+        "similarity": 0.9180741906166077
+      },
+      {
+        "id": "t60-089",
+        "asked": "Is standard shipping free on a $55 order?",
+        "asked_intent": "free_ship_total:55",
+        "matched": "Is standard shipping free on a $30 order?",
+        "matched_intent": "free_ship_total:30",
+        "similarity": 0.9192004203796387
+      },
+      {
+        "id": "t60-090",
+        "asked": "What are the store hours on Sunday?",
+        "asked_intent": "hours_on_day:Sunday",
+        "matched": "What are the weekday store hours?",
+        "matched_intent": "np:hours_weekday",
+        "similarity": 0.8961694240570068
+      }
+    ]
+  },
+  "vs_baseline": {
+    "baseline": "eval/results/m1_baseline_v4_7b_60.json",
+    "wall_saved_s": 125.59647304238752,
+    "llm_saved_s": 128.7375127854757,
+    "note": "separate runs; LLM time varies a little between runs"
+  }
+}

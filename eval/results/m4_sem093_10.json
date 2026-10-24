@@ -1,0 +1,85 @@
+{
+  "run_id": "traffic_10-semantic-0.93-qwen2.5:7b-1792840488",
+  "traffic": "eval/traffic_10.jsonl",
+  "mode": "single-threshold semantic cache",
+  "threshold": 0.93,
+  "guard": true,
+  "fallback": true,
+  "embedder": "BAAI/bge-small-en-v1.5",
+  "model": "qwen2.5:7b",
+  "prompt": "v4",
+  "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "policy_version": "v1",
+  "when": "2026-10-24T11:17:29+00:00",
+  "elapsed_s": 160.1542956250487,
+  "failed": [],
+  "n": 200,
+  "decisions": {
+    "miss": 169,
+    "miss_entity": 19,
+    "hit": 12
+  },
+  "latency_by_decision": {
+    "miss": {
+      "n": 169,
+      "p50": 855.536250048317,
+      "p95": 1481.2315586023028
+    },
+    "miss_entity": {
+      "n": 19,
+      "p50": 1098.043957957998,
+      "p95": 1398.6253454466348
+    },
+    "hit": {
+      "n": 12,
+      "p50": 17.505228926893324,
+      "p95": 33.73104169149883
+    }
+  },
+  "latency_ms": {
+    "mean": 799.9125412502326,
+    "p50": 859.3661875347607,
+    "p95": 1445.9383110515762
+  },
+  "llm_ms": {
+    "p50": 867.7232495392673,
+    "p95": 1421.7934125452302
+  },
+  "llm_total_s": 154.49995096412022,
+  "wall_total_s": 159.98250825004652,
+  "quality": {
+    "requests": 200,
+    "hits": 12,
+    "hit_rate": 0.06,
+    "false_hits": 2,
+    "false_hit_rate": 0.16666666666666666,
+    "false_hit_share_of_requests": 0.01,
+    "repeats": 20,
+    "repeat_correct_hits": 10,
+    "repeat_recall": 0.5,
+    "false_hit_examples": [
+      {
+        "id": "t10-092",
+        "asked": "What are the Sunday store hours?",
+        "asked_intent": "np:hours_sunday",
+        "matched": "What are the store hours on Sunday?",
+        "matched_intent": "hours_on_day:Sunday",
+        "similarity": 0.9897223711013794
+      },
+      {
+        "id": "t10-190",
+        "asked": "Price of the Trailhead Pack 65L?",
+        "asked_intent": "price_of:Trailhead Pack 65L",
+        "matched": "What is the SKU for the Trailhead Pack 65L?",
+        "matched_intent": "sku_of:Trailhead Pack 65L",
+        "similarity": 0.935839831829071
+      }
+    ]
+  },
+  "vs_baseline": {
+    "baseline": "eval/results/m1_baseline_v4_7b_10.json",
+    "wall_saved_s": 8.781512829475105,
+    "llm_saved_s": 14.260779575328343,
+    "note": "separate runs; LLM time varies a little between runs"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "run_id": "traffic_10-semantic-0.93-verify-judge-high-qwen2.5:7b-1792847250",
+  "traffic": "eval/traffic_10.jsonl",
+  "mode": "single-threshold semantic cache",
+  "threshold": 0.93,
+  "guard": true,
+  "fallback": true,
+  "verifier": "llm-judge:qwen2.5:7b",
+  "low": 0.8,
+  "verify_high": true,
+  "embedder": "BAAI/bge-small-en-v1.5",
+  "model": "qwen2.5:7b",
+  "prompt": "v4",
+  "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+  "policy_version": "v1",
+  "when": "2026-10-24T13:10:41+00:00",
+  "elapsed_s": 190.15592133288737,
+  "failed": [],
+  "n": 200,
+  "decisions": {
+    "miss": 69,
+    "miss_entity": 85,
+    "hit": 18,
+    "miss_verifier": 28
+  },
+  "latency_by_decision": {
+    "miss": {
+      "n": 69,
+      "p50": 757.8265410847962,
+      "p95": 1257.8668168047443
+    },
+    "miss_entity": {
+      "n": 85,
+      "p50": 987.0942499255762,
+      "p95": 1765.1333499234165
+    },
+    "hit": {
+      "n": 18,
+      "p50": 368.47722897073254,
+      "p95": 592.0585089887024
+    },
+    "miss_verifier": {
+      "n": 28,
+      "p50": 1263.390978507232,
+      "p95": 2156.393157900311
+    }
+  },
+  "latency_ms": {
+    "mean": 949.7189945814898,
+    "p50": 929.624542070087,
+    "p95": 1793.6375374207266
+  },
+  "llm_ms": {
+    "p50": 864.5844794809818,
+    "p95": 1448.6675142194142
+  },
+  "llm_total_s": 154.74745323648676,
+  "wall_total_s": 189.94379891629796,
+  "quality": {
+    "requests": 200,
+    "hits": 18,
+    "hit_rate": 0.09,
+    "false_hits": 0,
+    "alias_hits": 1,
+    "false_hit_rate": 0.0,
+    "false_hit_share_of_requests": 0.0,
+    "repeats": 20,
+    "repeat_correct_hits": 17,
+    "repeat_recall": 0.85,
+    "false_hit_examples": []
+  }
+}

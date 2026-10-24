@@ -1,0 +1,150 @@
+{"id": "A-par-01", "type": "paraphrase", "q1": "How many days do I have to return an unused item?", "q2": "What is the time limit for sending back something I haven't used?", "label": "hit", "split": "calibration"}
+{"id": "A-par-02", "type": "paraphrase", "q1": "Can I return a sale item?", "q2": "Are discounted items eligible for returns?", "label": "hit", "split": "heldout"}
+{"id": "A-par-03", "type": "paraphrase", "q1": "How long does a refund take?", "q2": "When will the money get back to my card after a return?", "label": "hit", "split": "calibration"}
+{"id": "A-par-04", "type": "paraphrase", "q1": "Do you charge to ship a return?", "q2": "Who pays for return postage?", "label": "hit", "split": "calibration"}
+{"id": "A-par-05", "type": "paraphrase", "q1": "Is there a restocking fee for opened tents?", "q2": "Do you charge extra when I send back a tent that has been opened?", "label": "hit", "split": "calibration"}
+{"id": "A-par-06", "type": "paraphrase", "q1": "Can I return a Beacon Headlamp?", "q2": "Is the Beacon Headlamp returnable?", "label": "hit", "split": "calibration"}
+{"id": "A-par-07", "type": "paraphrase", "q1": "Can I exchange an item for a different size?", "q2": "Is it possible to swap something for another size?", "label": "hit", "split": "calibration"}
+{"id": "A-par-08", "type": "paraphrase", "q1": "How much is standard shipping?", "q2": "What do you charge for standard delivery?", "label": "hit", "split": "heldout"}
+{"id": "A-par-09", "type": "paraphrase", "q1": "How long does standard shipping take?", "q2": "How many business days until a standard order arrives?", "label": "hit", "split": "calibration"}
+{"id": "A-par-10", "type": "paraphrase", "q1": "How fast is express shipping?", "q2": "How long does express delivery take?", "label": "hit", "split": "calibration"}
+{"id": "A-par-11", "type": "paraphrase", "q1": "What does express shipping cost?", "q2": "How much is express delivery?", "label": "hit", "split": "heldout"}
+{"id": "A-par-12", "type": "paraphrase", "q1": "Do you ship to Canada?", "q2": "Can I get an order delivered to Canada?", "label": "hit", "split": "calibration"}
+{"id": "A-par-13", "type": "paraphrase", "q1": "How much is shipping to Canada?", "q2": "What does it cost to send an order to Canada?", "label": "hit", "split": "calibration"}
+{"id": "A-par-14", "type": "paraphrase", "q1": "Do you deliver to PO boxes?", "q2": "Can an order be sent to a PO box?", "label": "hit", "split": "heldout"}
+{"id": "A-par-15", "type": "paraphrase", "q1": "What is the cutoff for same-day shipping?", "q2": "By what time must I order for it to ship the same day?", "label": "hit", "split": "calibration"}
+{"id": "A-par-16", "type": "paraphrase", "q1": "Can I cancel an order after placing it?", "q2": "Is it possible to cancel once an order has been placed?", "label": "hit", "split": "calibration"}
+{"id": "A-par-17", "type": "paraphrase", "q1": "Can I change the shipping address?", "q2": "Is it possible to update the delivery address before it ships?", "label": "hit", "split": "calibration"}
+{"id": "A-par-18", "type": "paraphrase", "q1": "Do you send tracking information?", "q2": "Will I receive a tracking email once the package ships?", "label": "hit", "split": "calibration"}
+{"id": "A-par-19", "type": "paraphrase", "q1": "What does an order number look like?", "q2": "What is the format of your order numbers?", "label": "hit", "split": "calibration"}
+{"id": "A-par-20", "type": "paraphrase", "q1": "What is your price adjustment policy?", "q2": "Can I get money back if the price drops after I buy?", "label": "hit", "split": "calibration"}
+{"id": "A-par-21", "type": "paraphrase", "q1": "Can I combine promo codes?", "q2": "Is it possible to stack two coupon codes?", "label": "hit", "split": "calibration"}
+{"id": "A-par-22", "type": "paraphrase", "q1": "What is the warranty on Trailhead packs?", "q2": "How long are Trailhead packs covered?", "label": "hit", "split": "heldout"}
+{"id": "A-par-23", "type": "paraphrase", "q1": "How long is the Ridgeline Sleeping Bag warranty?", "q2": "What warranty does the Ridgeline Sleeping Bag have?", "label": "hit", "split": "calibration"}
+{"id": "A-par-24", "type": "paraphrase", "q1": "What does the warranty cover?", "q2": "Which kinds of damage are covered by the warranty?", "label": "hit", "split": "heldout"}
+{"id": "A-par-25", "type": "paraphrase", "q1": "How do I make a warranty claim?", "q2": "What do I need to send to claim under warranty?", "label": "hit", "split": "calibration"}
+{"id": "A-par-26", "type": "paraphrase", "q1": "How much does a zipper repair cost?", "q2": "What is the charge to fix a zipper on a pack?", "label": "hit", "split": "calibration"}
+{"id": "A-par-27", "type": "paraphrase", "q1": "How long does a zipper repair take?", "q2": "How many business days does fixing a zipper take?", "label": "hit", "split": "calibration"}
+{"id": "A-par-28", "type": "paraphrase", "q1": "Do gift cards expire?", "q2": "Is there an expiry date on gift cards?", "label": "hit", "split": "heldout"}
+{"id": "A-par-29", "type": "paraphrase", "q1": "Can I get cash for a gift card?", "q2": "Can gift cards be turned into cash?", "label": "hit", "split": "calibration"}
+{"id": "A-par-30", "type": "paraphrase", "q1": "What happens if I lose a gift card?", "q2": "Can a lost gift card be replaced?", "label": "hit", "split": "calibration"}
+{"id": "A-par-31", "type": "paraphrase", "q1": "Is Trail Club free to join?", "q2": "Does it cost anything to become a Trail Club member?", "label": "hit", "split": "calibration"}
+{"id": "A-par-32", "type": "paraphrase", "q1": "How do I earn Trail Club points?", "q2": "How many points do I get per dollar spent?", "label": "hit", "split": "calibration"}
+{"id": "A-par-33", "type": "paraphrase", "q1": "Do Trail Club points expire?", "q2": "How long are Trail Club points valid for?", "label": "hit", "split": "heldout"}
+{"id": "A-par-34", "type": "paraphrase", "q1": "When do Trail Club members get early sale access?", "q2": "How far ahead of the public can members shop sales?", "label": "hit", "split": "calibration"}
+{"id": "A-par-35", "type": "paraphrase", "q1": "What are your store hours on Sunday?", "q2": "When is the store open on Sundays?", "label": "hit", "split": "calibration"}
+{"id": "A-par-36", "type": "paraphrase", "q1": "What are the weekday store hours?", "q2": "What time do you open and close Monday to Saturday?", "label": "hit", "split": "heldout"}
+{"id": "A-par-37", "type": "paraphrase", "q1": "Is the store open on December 25?", "q2": "Are you open for business on December 25?", "label": "hit", "split": "calibration"}
+{"id": "A-par-38", "type": "paraphrase", "q1": "What time does the store close on December 24?", "q2": "How late are you open on December 24?", "label": "hit", "split": "heldout"}
+{"id": "A-par-39", "type": "paraphrase", "q1": "Which payment methods do you accept?", "q2": "What cards can I pay with?", "label": "hit", "split": "calibration"}
+{"id": "A-par-40", "type": "paraphrase", "q1": "Do you accept checks?", "q2": "Can I pay by check?", "label": "hit", "split": "heldout"}
+{"id": "A-par-41", "type": "paraphrase", "q1": "Is sales tax included in prices?", "q2": "Do the listed prices already include tax?", "label": "hit", "split": "calibration"}
+{"id": "A-par-42", "type": "paraphrase", "q1": "What phone number can I call for support?", "q2": "How do I reach you by phone?", "label": "hit", "split": "heldout"}
+{"id": "A-par-43", "type": "paraphrase", "q1": "When is phone support available?", "q2": "What are the phone support hours?", "label": "hit", "split": "heldout"}
+{"id": "A-par-44", "type": "paraphrase", "q1": "How quickly does email support reply?", "q2": "How long does it take to get an answer to a support email?", "label": "hit", "split": "calibration"}
+{"id": "A-par-45", "type": "paraphrase", "q1": "How much is the Trailhead Pack 65L?", "q2": "What does the Trailhead Pack 65L cost?", "label": "hit", "split": "heldout"}
+{"id": "A-par-46", "type": "paraphrase", "q1": "What is the SKU of the Compass GPS Watch?", "q2": "Which product code does the Compass GPS Watch have?", "label": "hit", "split": "calibration"}
+{"id": "A-par-47", "type": "paraphrase", "q1": "What is the Beacon Headlamp warranty?", "q2": "How long is the Beacon Headlamp covered?", "label": "hit", "split": "calibration"}
+{"id": "A-par-48", "type": "paraphrase", "q1": "Does promo code SPRING10 need a minimum order?", "q2": "Is there a minimum spend for code SPRING10?", "label": "hit", "split": "calibration"}
+{"id": "A-par-49", "type": "paraphrase", "q1": "What does promo code TRAIL20 give?", "q2": "What discount do I get with TRAIL20?", "label": "hit", "split": "heldout"}
+{"id": "A-par-50", "type": "paraphrase", "q1": "Do you deliver to Mexico?", "q2": "Is delivery to Mexico possible?", "label": "hit", "split": "calibration"}
+{"id": "A-dif-01", "type": "different", "q1": "How long does standard shipping take?", "q2": "How much does standard shipping cost?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-02", "type": "different", "q1": "How fast is express shipping?", "q2": "Is express shipping ever free?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-03", "type": "different", "q1": "Do you ship to Canada?", "q2": "How long does an order to Canada take to arrive?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-04", "type": "different", "q1": "Can an order be cancelled after it is placed?", "q2": "Can the address on an order be changed after it is placed?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-05", "type": "different", "q1": "Can I return a sale item for cash?", "q2": "Can I get a price adjustment on a sale item?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-06", "type": "different", "q1": "How long does a refund take to arrive?", "q2": "How long does it take to receive a replacement for an exchange?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-07", "type": "different", "q1": "What does the warranty cover?", "q2": "How do I submit a warranty claim?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-08", "type": "different", "q1": "How long is the warranty on tents?", "q2": "Is there a restocking fee when a tent is returned?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-09", "type": "different", "q1": "Do gift cards expire?", "q2": "Can a gift card be used to pay for shipping?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-10", "type": "different", "q1": "How do I earn Trail Club points?", "q2": "How do I redeem Trail Club points?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-11", "type": "different", "q1": "Do Trail Club points expire?", "q2": "Do members get early access to sales?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-12", "type": "different", "q1": "What are the store hours on Sunday?", "q2": "What are the phone support hours?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-13", "type": "different", "q1": "Is the store open on holidays?", "q2": "Is phone support open on holidays?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-14", "type": "different", "q1": "Which payment methods do you take online?", "q2": "Which payment methods do you take in the store?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-15", "type": "different", "q1": "Do you accept PayPal?", "q2": "Do you accept personal checks?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-16", "type": "different", "q1": "How do I contact support by email?", "q2": "How do I contact support by phone?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-17", "type": "different", "q1": "How much does a zipper repair cost?", "q2": "How long does a zipper repair take?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-18", "type": "different", "q1": "Is sales tax included in listed prices?", "q2": "Is sales tax charged on orders to Canada?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-19", "type": "different", "q1": "Can I use two promo codes at once?", "q2": "Can I use a promo code on a sale item?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-20", "type": "different", "q1": "What does SPRING10 give?", "q2": "How long is SPRING10 valid?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-21", "type": "different", "q1": "Can I return a headlamp?", "q2": "Does a headlamp have a warranty?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-22", "type": "different", "q1": "How do I track a package?", "q2": "How do I return a package?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-23", "type": "different", "q1": "What is the order number format?", "q2": "How do I look up an order number?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-24", "type": "different", "q1": "Who pays for return shipping?", "q2": "Who pays for shipping when an item arrives defective?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-25", "type": "different", "q1": "What items cannot be returned?", "q2": "What items can be exchanged?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-26", "type": "different", "q1": "Do you ship to PO boxes?", "q2": "Do you ship same day to PO boxes?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-27", "type": "different", "q1": "What is the cutoff for same-day shipping?", "q2": "What is the cutoff for cancelling an order?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-28", "type": "different", "q1": "Can I exchange an item for a different colour?", "q2": "Can I exchange an item for a different product?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-29", "type": "different", "q1": "Is the Trail Club free?", "q2": "Can Trail Club members get free shipping?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-30", "type": "different", "q1": "What is the minimum gift card amount?", "q2": "What is the maximum gift card amount?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-31", "type": "different", "q1": "Where is the store located?", "q2": "Where do I send a return?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-32", "type": "different", "q1": "Do you have a physical store?", "q2": "Do you have an online store?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-33", "type": "different", "q1": "How do I make a warranty claim for a pack?", "q2": "How do I make a repair request for a pack?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-34", "type": "different", "q1": "Can I pay for an order with a gift card?", "q2": "Can I buy a gift card with a gift card?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-35", "type": "different", "q1": "What happens to unused Trail Club points?", "q2": "What happens to an unused gift card balance?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-36", "type": "different", "q1": "Can I return something bought in the store by mail?", "q2": "Can I return something bought online to the store?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-37", "type": "different", "q1": "Do you offer free shipping?", "q2": "Do you offer free returns?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-38", "type": "different", "q1": "What is the Trailhead Pack warranty?", "q2": "What is the Trailhead Pack return window?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-39", "type": "different", "q1": "What is the Summit tent warranty?", "q2": "What is the Summit tent price range?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-40", "type": "different", "q1": "Does the Compass GPS Watch have a warranty?", "q2": "Does the Compass GPS Watch have a return window?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-41", "type": "different", "q1": "Can I cancel an order that has shipped?", "q2": "Can I return an order that has shipped?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-42", "type": "different", "q1": "Is email support fast?", "q2": "Is phone support fast?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-43", "type": "different", "q1": "Is there a fee to return a sleeping bag?", "q2": "Is there a fee to repair a sleeping bag?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-44", "type": "different", "q1": "How can I pay in store?", "q2": "How can I pay online?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-45", "type": "different", "q1": "Do you charge tax in Maine?", "q2": "Do you charge tax in Canada?", "label": "miss", "split": "heldout"}
+{"id": "A-dif-46", "type": "different", "q1": "How long do gift cards last?", "q2": "How long do promo codes last?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-47", "type": "different", "q1": "Can I get a price adjustment after buying?", "q2": "Can I use a promo code after buying?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-48", "type": "different", "q1": "How are items packaged for shipping?", "q2": "How should returns be packaged?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-49", "type": "different", "q1": "Is there a loyalty program?", "q2": "Is there a student discount?", "label": "miss", "split": "calibration"}
+{"id": "A-dif-50", "type": "different", "q1": "What colours does the Ridgeline Sleeping Bag come in?", "q2": "What sizes does the Ridgeline Sleeping Bag come in?", "label": "miss", "split": "calibration"}
+{"id": "A-near-01", "type": "near_miss", "q1": "Can I return an item 20 days after it was delivered?", "q2": "Can I return an item 40 days after it was delivered?", "label": "miss", "split": "calibration", "kind": "duration"}
+{"id": "A-near-02", "type": "near_miss", "q1": "Can I return a sale item 10 days after delivery?", "q2": "Can I return a sale item 20 days after delivery?", "label": "miss", "split": "calibration", "kind": "duration"}
+{"id": "A-near-03", "type": "near_miss", "q1": "Can I return a Beacon Headlamp 10 days after delivery?", "q2": "Can I return a Beacon Headlamp 20 days after delivery?", "label": "miss", "split": "heldout", "kind": "duration"}
+{"id": "A-near-04", "type": "near_miss", "q1": "Can I get a price adjustment 5 days after buying?", "q2": "Can I get a price adjustment 12 days after buying?", "label": "miss", "split": "calibration", "kind": "duration"}
+{"id": "A-near-05", "type": "near_miss", "q1": "Is a price adjustment possible for an item bought 6 days ago?", "q2": "Is a price adjustment possible for an item bought 16 days ago?", "label": "miss", "split": "calibration", "kind": "duration"}
+{"id": "A-near-06", "type": "near_miss", "q1": "Does an order of $60 get free standard shipping?", "q2": "Does an order of $80 get free standard shipping?", "label": "miss", "split": "calibration", "kind": "amount"}
+{"id": "A-near-07", "type": "near_miss", "q1": "Is standard shipping free when the cart is $74?", "q2": "Is standard shipping free when the cart is $76?", "label": "miss", "split": "calibration", "kind": "amount"}
+{"id": "A-near-08", "type": "near_miss", "q1": "Will an order placed at 1 pm Eastern ship today?", "q2": "Will an order placed at 4 pm Eastern ship today?", "label": "miss", "split": "calibration", "kind": "time"}
+{"id": "A-near-09", "type": "near_miss", "q1": "Can an order be cancelled 30 minutes after it was placed?", "q2": "Can an order be cancelled 3 hours after it was placed?", "label": "miss", "split": "calibration", "kind": "duration"}
+{"id": "A-near-10", "type": "near_miss", "q1": "Can I buy a gift card for $25?", "q2": "Can I buy a gift card for $600?", "label": "miss", "split": "heldout", "kind": "amount"}
+{"id": "A-near-11", "type": "near_miss", "q1": "What reward do I get for 250 Trail Club points?", "q2": "What reward do I get for 1000 Trail Club points?", "label": "miss", "split": "calibration", "kind": "number"}
+{"id": "A-near-12", "type": "near_miss", "q1": "How much store credit are 400 Trail Club points worth?", "q2": "How much store credit are 2000 Trail Club points worth?", "label": "miss", "split": "heldout", "kind": "number"}
+{"id": "A-near-13", "type": "near_miss", "q1": "Does an order of $40 qualify for code SPRING10?", "q2": "Does an order of $55 qualify for code SPRING10?", "label": "miss", "split": "calibration", "kind": "amount"}
+{"id": "A-near-14", "type": "near_miss", "q1": "Will a Canadian order arrive within 6 business days?", "q2": "Will a Canadian order arrive within 12 business days?", "label": "miss", "split": "heldout", "kind": "number"}
+{"id": "A-near-15", "type": "near_miss", "q1": "Will the refund arrive 3 business days after you get the item back?", "q2": "Will the refund arrive 8 business days after you get the item back?", "label": "miss", "split": "calibration", "kind": "duration"}
+{"id": "A-near-16", "type": "near_miss", "q1": "Is phone support open at 8 am on weekdays?", "q2": "Is phone support open at 2 pm on weekdays?", "label": "miss", "split": "calibration", "kind": "time"}
+{"id": "A-near-17", "type": "near_miss", "q1": "Is the store open at 8 am on Saturday?", "q2": "Is the store open at 6 pm on Saturday?", "label": "miss", "split": "calibration", "kind": "time"}
+{"id": "A-near-18", "type": "near_miss", "q1": "Is the store open at 10 am on Sunday?", "q2": "Is the store open at 4 pm on Sunday?", "label": "miss", "split": "calibration", "kind": "time"}
+{"id": "A-near-19", "type": "near_miss", "q1": "Is a Trailhead pack still under warranty 4 years after purchase?", "q2": "Is a Trailhead pack still under warranty 6 years after purchase?", "label": "miss", "split": "calibration", "kind": "duration"}
+{"id": "A-near-20", "type": "near_miss", "q1": "How many Trail Club points do I earn on a $100 purchase?", "q2": "How many Trail Club points do I earn on a $250 purchase?", "label": "miss", "split": "calibration", "kind": "amount"}
+{"id": "A-near-21", "type": "near_miss", "q1": "How much do I save with SPRING10 on a $60 order?", "q2": "How much do I save with SPRING10 on a $200 order?", "label": "miss", "split": "heldout", "kind": "amount"}
+{"id": "A-near-22", "type": "near_miss", "q1": "How much tax do I pay on a $100 in-store purchase?", "q2": "How much tax do I pay on a $200 in-store purchase?", "label": "miss", "split": "calibration", "kind": "amount"}
+{"id": "A-near-23", "type": "near_miss", "q1": "How much is the restocking fee on an opened tent that cost $349?", "q2": "How much is the restocking fee on an opened tent that cost $499?", "label": "miss", "split": "calibration", "kind": "amount"}
+{"id": "A-near-24", "type": "near_miss", "q1": "How much does the Trailhead Pack 40L cost?", "q2": "How much does the Trailhead Pack 65L cost?", "label": "miss", "split": "heldout", "kind": "product"}
+{"id": "A-near-25", "type": "near_miss", "q1": "What is the warranty on the Summit Tent 2P?", "q2": "What is the warranty on the Compass GPS Watch?", "label": "miss", "split": "calibration", "kind": "product"}
+{"id": "A-near-26", "type": "near_miss", "q1": "Can I return an opened Summit Tent 2P?", "q2": "Can I return an opened Ridgeline Sleeping Bag?", "label": "miss", "split": "calibration", "kind": "product"}
+{"id": "A-near-27", "type": "near_miss", "q1": "What is the price of the Beacon Headlamp?", "q2": "What is the price of the Compass GPS Watch?", "label": "miss", "split": "calibration", "kind": "product"}
+{"id": "A-near-28", "type": "near_miss", "q1": "How long is the return window for the Beacon Headlamp?", "q2": "How long is the return window for the Ridgeline Sleeping Bag?", "label": "miss", "split": "heldout", "kind": "product"}
+{"id": "A-near-29", "type": "near_miss", "q1": "Is there a restocking fee on the Summit Tent 4P?", "q2": "Is there a restocking fee on the Trailhead Pack 40L?", "label": "miss", "split": "calibration", "kind": "product"}
+{"id": "A-near-30", "type": "near_miss", "q1": "Does the Ridgeline Sleeping Bag come with a one year warranty?", "q2": "Does the Trailhead Pack 65L come with a one year warranty?", "label": "miss", "split": "heldout", "kind": "product"}
+{"id": "A-near-31", "type": "near_miss", "q1": "What is the SKU of the Summit Tent 2P?", "q2": "What is the SKU of the Summit Tent 4P?", "label": "miss", "split": "calibration", "kind": "product"}
+{"id": "A-near-32", "type": "near_miss", "q1": "Is the Trailhead Pack 40L eligible for code TRAIL20?", "q2": "Is the Summit Tent 4P eligible for code TRAIL20?", "label": "miss", "split": "calibration", "kind": "product"}
+{"id": "A-near-33", "type": "near_miss", "q1": "Can I repair a zipper on the Trailhead Pack 40L?", "q2": "Can I repair a zipper on the Summit Tent 2P?", "label": "miss", "split": "calibration", "kind": "product"}
+{"id": "A-near-34", "type": "near_miss", "q1": "What discount does code SPRING10 give?", "q2": "What discount does code TRAIL20 give?", "label": "miss", "split": "heldout", "kind": "code"}
+{"id": "A-near-35", "type": "near_miss", "q1": "Can I combine code SPRING10 with a sale price?", "q2": "Can I combine code TRAIL20 with a sale price?", "label": "miss", "split": "calibration", "kind": "code"}
+{"id": "A-near-36", "type": "near_miss", "q1": "Does promo code SPRING10 work on orders under $50?", "q2": "Does promo code TRAIL20 work on orders under $50?", "label": "miss", "split": "calibration", "kind": "code"}
+{"id": "A-near-37", "type": "near_miss", "q1": "Is SKU TP-40 covered by the warranty?", "q2": "Is SKU ST-2 covered by the warranty?", "label": "miss", "split": "calibration", "kind": "code"}
+{"id": "A-near-38", "type": "near_miss", "q1": "What does SKU BH-1 refer to?", "q2": "What does SKU CW-1 refer to?", "label": "miss", "split": "calibration", "kind": "code"}
+{"id": "A-near-39", "type": "near_miss", "q1": "Which product has SKU RB-1?", "q2": "Which product has SKU TP-65?", "label": "miss", "split": "heldout", "kind": "code"}
+{"id": "A-near-40", "type": "near_miss", "q1": "Can I use the code SPRING10 twice?", "q2": "Can I use the code TRAIL20 twice?", "label": "miss", "split": "calibration", "kind": "code"}
+{"id": "A-near-41", "type": "near_miss", "q1": "Is code WELCOME5 still valid?", "q2": "Is code SPRING10 still valid?", "label": "miss", "split": "calibration", "kind": "code"}
+{"id": "A-near-42", "type": "near_miss", "q1": "Is the store open on December 24?", "q2": "Is the store open on December 25?", "label": "miss", "split": "calibration", "kind": "date"}
+{"id": "A-near-43", "type": "near_miss", "q1": "What time does the store close on December 24?", "q2": "What time does the store close on December 23?", "label": "miss", "split": "heldout", "kind": "date"}
+{"id": "A-near-44", "type": "near_miss", "q1": "Is the store open on January 1?", "q2": "Is the store open on January 2?", "label": "miss", "split": "calibration", "kind": "date"}
+{"id": "A-near-45", "type": "near_miss", "q1": "Are you open on Thanksgiving Day for in-store shopping?", "q2": "Are you open on Black Friday for in-store shopping?", "label": "miss", "split": "heldout", "kind": "date"}
+{"id": "A-near-46", "type": "near_miss", "q1": "Will the store be open on July 4?", "q2": "Will the store be open on July 5?", "label": "miss", "split": "calibration", "kind": "date"}
+{"id": "A-near-47", "type": "near_miss", "q1": "Is the store open on December 31?", "q2": "Is the store open on December 25?", "label": "miss", "split": "heldout", "kind": "date"}
+{"id": "A-near-48", "type": "near_miss", "q1": "Are returns accepted in the store on December 25?", "q2": "Are returns accepted in the store on December 26?", "label": "miss", "split": "heldout", "kind": "date"}
+{"id": "A-near-49", "type": "near_miss", "q1": "Is phone support available on Saturday?", "q2": "Is phone support available on Friday?", "label": "miss", "split": "heldout", "kind": "date"}
+{"id": "A-near-50", "type": "near_miss", "q1": "Is the store open on Sunday in the morning?", "q2": "Is the store open on Monday in the morning?", "label": "miss", "split": "calibration", "kind": "date"}

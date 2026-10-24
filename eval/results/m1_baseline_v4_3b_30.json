@@ -1,0 +1,27 @@
+{
+  "run_id": "traffic_30-qwen2.5:3b-1792837092",
+  "traffic": "eval/traffic_30.jsonl",
+  "mode": "no-cache baseline",
+  "model": "qwen2.5:3b",
+  "prompt": "v4",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "policy_version": "v1",
+  "when": "2026-10-24T10:19:20+00:00",
+  "elapsed_s": 68.7755579170771,
+  "failed": [],
+  "n": 200,
+  "decisions": {
+    "miss": 200
+  },
+  "latency_ms": {
+    "mean": 342.30358098924626,
+    "p50": 286.423166457098,
+    "p95": 654.02942916844
+  },
+  "llm_ms": {
+    "p50": 286.40658303629607,
+    "p95": 654.0138374024532
+  },
+  "llm_total_s": 68.45599737158045,
+  "wall_total_s": 68.46071619784925
+}
