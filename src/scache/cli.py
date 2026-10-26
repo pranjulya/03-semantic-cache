@@ -19,6 +19,7 @@ from scache.service import Service
 from scache.safety import choose_min_sim, run_pass, run_security, summarize_pass, topic_table
 from scache.sweep import frange
 from scache.verifycheck import (
+    decisions_by_type, pipeline_decisions,
     apply_threshold, choose_low_verified, choose_score_threshold, low_table, reachable, score_pairs, verifier_report,
 )
 
@@ -229,6 +230,36 @@ def cmd_verifiers(args) -> int:
     return 0
 
 
+def cmd_setcheck(args) -> int:
+    """Run labelled pairs through the pipeline's decision (floor, guard, verifier) at the configured LOW/HIGH."""
+    from scache.embed import Embedder
+    from scache.verifier import LLMJudgeVerifier
+    s = Settings(**({"llm_tag": args.model} if args.model else {}))
+    pairs = [json.loads(line) for line in Path(args.pairs).read_text().splitlines() if line.strip()]
+    pairs = with_guard(pair_sims(pairs, Embedder()), entities_compatible)
+    verifier = None if args.no_verifier else LLMJudgeVerifier(OllamaClient(s))
+    decided = pipeline_decisions(pairs, s.low, s.high, verifier, s.verify_high)
+    res = {"pairs": args.pairs, "low": s.low, "high": s.high, "verify_high": s.verify_high,
+           "verifier": verifier.name if verifier else None,
+           "model_digest": OllamaClient(s).model_digest() if verifier else None,
+           "by_type": decisions_by_type(decided),
+           "decided": [{k: p.get(k) for k in ("id", "type", "kind", "label", "sim", "guard_ok", "decision")} for p in decided],
+           "wrong": [{k: p.get(k) for k in ("id", "type", "q1", "q2", "sim", "decision")}
+                     for p in decided if (p["decision"] == "hit") != (p["label"] == "hit")]}
+    if args.out:
+        Path(args.out).parent.mkdir(parents=True, exist_ok=True)
+        Path(args.out).write_text(json.dumps(res, indent=2))
+    print(f"{res['verifier'] or 'guard only, no verifier'}  LOW {s.low}  HIGH {s.high}  verify_high {s.verify_high}")
+    for typ, r in res["by_type"].items():
+        ub = f", false-hit 95% upper bound {r['false_hit_ci95_upper']:.1%}" if r.get("false_hit_ci95_upper") is not None else ""
+        extra = "  " + " ".join(f"{d} {n}" for d, n in r["by_decision"].items()) if "by_decision" in r else ""
+        print(f"  {typ:<15} hits {r['hits']:>3}/{r['n']:<3}{ub}{extra}")
+    for w in res["wrong"]:
+        if w["decision"] == "hit":  # paraphrase misses are in --out; false hits are what matters here
+            print(f"  false hit: {w['id']} {w['type']} sim {w['sim']:.3f} | {w['q1']} | {w['q2']}")
+    return 0
+
+
 def _fresh_semantic_service(settings: Settings, policy: str, cache, **kw) -> Service:
     return Service(client=OllamaClient(settings), settings=settings, policy=policy, mode="semantic", cache=cache,
                    threshold=settings.high, **kw)
@@ -413,6 +444,13 @@ def build_parser() -> argparse.ArgumentParser:
     v.add_argument("--high", type=float)
     v.add_argument("--out")
     v.set_defaults(fn=cmd_verifiers)
+
+    sc2 = sub.add_parser("setcheck", help="pipeline decisions (floor, guard, verifier) on labelled pairs, e.g. the Set A extension")
+    sc2.add_argument("--pairs", default="eval/pairs_extra.jsonl")
+    sc2.add_argument("--model", help="Ollama tag for the judge")
+    sc2.add_argument("--no-verifier", action="store_true", help="guard only (8 GB tier); runs without Ollama")
+    sc2.add_argument("--out")
+    sc2.set_defaults(fn=cmd_setcheck)
 
     d = sub.add_parser("invalidate-demo", help="Set C: stale answers after a policy change, four ways to handle it")
     d.add_argument("--staleness", default="eval/staleness.jsonl")

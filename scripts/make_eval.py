@@ -7,8 +7,8 @@ import random
 from pathlib import Path
 
 from eval_data import (
-    ANSWER_CHECKS, CHANGED_QUESTIONS, CONTROLS, DIFFERENT, FACTS, NEAR, NP_INTENTS, PARAM_FAMILIES,
-    PARAPHRASE, POLICY_TEMPLATE, PRODUCTS, SECURITY, TOPICS,
+    ANSWER_CHECKS, CHANGED_QUESTIONS, CONTROLS, DIFFERENT, DIFFERENT_EXTRA, FACTS, NEAR, NEAR_EXTRA, NP_INTENTS,
+    PARAM_FAMILIES, PARAPHRASE, PARAPHRASE_EXTRA, POLICY_TEMPLATE, PRODUCTS, SAME_ENTITY, SECURITY, TOPICS,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -43,6 +43,25 @@ def build_pairs(seed: int = SEED) -> list[dict]:
     for code, typ, label, items in groups:
         for i, (split, (q1, q2, kind)) in enumerate(zip(_split(len(items), rng), items), 1):
             row = {"id": f"A-{code}-{i:02d}", "type": typ, "q1": q1, "q2": q2, "label": label, "split": split}
+            if kind:
+                row["kind"] = kind
+            rows.append(row)
+    return rows
+
+
+def build_pairs_extra() -> list[dict]:
+    """Set A extension (`eval/pairs_extra.jsonl`): 30 paraphrase, 30 different intent, 30 near-miss and 30
+    same-entity different-intent pairs, all split "extra". Never used to choose anything."""
+    groups = [
+        ("par", "paraphrase", "hit", [(a, b, None) for a, b in PARAPHRASE_EXTRA]),
+        ("dif", "different", "miss", [(a, b, None) for a, b in DIFFERENT_EXTRA]),
+        ("near", "near_miss", "miss", NEAR_EXTRA),
+        ("same", "same_entity", "miss", [(a, b, None) for a, b in SAME_ENTITY]),
+    ]
+    rows = []
+    for code, typ, label, items in groups:
+        for i, (q1, q2, kind) in enumerate(items, 1):
+            row = {"id": f"A2-{code}-{i:02d}", "type": typ, "q1": q1, "q2": q2, "label": label, "split": "extra"}
             if kind:
                 row["kind"] = kind
             rows.append(row)
@@ -124,12 +143,13 @@ def main() -> None:
     (ROOT / "data" / "policy.md").write_text(render_policy("v1"))
     (ROOT / "data" / "policy_v2.md").write_text(render_policy("v2"))
     write_jsonl(ROOT / "eval" / "pairs.jsonl", build_pairs())
+    write_jsonl(ROOT / "eval" / "pairs_extra.jsonl", build_pairs_extra())
     for pct in REPEAT_RATES:
         write_jsonl(ROOT / "eval" / f"traffic_{pct}.jsonl", build_traffic(pct))
     write_jsonl(ROOT / "eval" / "staleness.jsonl", build_staleness())
     write_jsonl(ROOT / "eval" / "security.jsonl", build_security())
     write_jsonl(ROOT / "eval" / "answers.jsonl", build_answers())
-    print("wrote data/policy.md, data/policy_v2.md, eval/{pairs,traffic_10,traffic_30,traffic_60,staleness,security,answers}.jsonl")
+    print("wrote data/policy.md, data/policy_v2.md, eval/{pairs,pairs_extra,traffic_10,traffic_30,traffic_60,staleness,security,answers}.jsonl")
 
 
 if __name__ == "__main__":

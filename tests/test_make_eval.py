@@ -150,3 +150,26 @@ def test_intent_aliases_name_real_intents():
 
     ids = {i["id"] for i in all_intents()}
     assert all(k in ids and v in ids for k, v in INTENT_ALIASES.items())
+
+
+def test_pairs_extra_counts_and_independence():
+    from make_eval import build_pairs_extra
+    rows = build_pairs_extra()
+    assert rows == build_pairs_extra()
+    assert Counter(p["type"] for p in rows) == {"paraphrase": 30, "different": 30, "near_miss": 30, "same_entity": 30}
+    assert {p["split"] for p in rows} == {"extra"} and len({p["id"] for p in rows}) == 120
+    assert {p["label"] for p in rows if p["type"] == "paraphrase"} == {"hit"}
+    assert {p["label"] for p in rows if p["type"] != "paraphrase"} == {"miss"}
+    for p in rows:
+        assert p["q1"] != p["q2"] and not PERSONAL.search(p["q1"] + " " + p["q2"])
+        if p["type"] == "near_miss":
+            assert p["kind"] in NEAR_KINDS
+    # no sentence shared with Set A or the Set B wordings, so the extension is not a re-test of seen text
+    seen = {q for p in build_pairs() for q in (p["q1"], p["q2"])} | {w for i in all_intents() for w in i["wordings"]}
+    assert not {q for p in rows for q in (p["q1"], p["q2"])} & seen
+
+
+def test_pairs_extra_file_matches_generator():
+    from make_eval import build_pairs_extra
+    rows = [json.loads(line) for line in (ROOT / "eval" / "pairs_extra.jsonl").read_text().splitlines()]
+    assert rows == build_pairs_extra()

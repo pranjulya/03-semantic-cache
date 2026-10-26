@@ -1,7 +1,8 @@
 import pytest
 
 from scache.verifycheck import (
-    apply_threshold, choose_score_threshold, reachable, score_pairs, verifier_report,
+    apply_threshold, choose_score_threshold, decisions_by_type, pipeline_decisions, reachable, score_pairs,
+    verifier_report,
 )
 
 
@@ -94,3 +95,23 @@ def test_choose_low_verified_prefers_most_hits_without_false_accepts_then_highes
     assert choose_low_verified(rows) == 0.8
     with pytest.raises(ValueError):
         choose_low_verified([{"low": 0.7, "hits_verified": 1, "false_verified": 1}])
+
+
+def test_pipeline_decisions_follow_floor_guard_verifier_order():
+    ps = [pair("hit", "paraphrase", 0.5), pair("miss", "near_miss", 0.95, guard_ok=False),
+          pair("miss", "same_entity", 0.95), pair("hit", "paraphrase", 0.85)]
+    assert [p["decision"] for p in pipeline_decisions(ps, 0.8, 0.93, Always(False))] == \
+        ["miss", "miss_entity", "miss_verifier", "miss_verifier"]
+    assert [p["decision"] for p in pipeline_decisions(ps, 0.8, 0.93, Always(True))] == ["miss", "miss_entity", "hit", "hit"]
+    # guard only: >= HIGH is a hit, the gray zone a miss
+    assert [p["decision"] for p in pipeline_decisions(ps, 0.8, 0.93)] == ["miss", "miss_entity", "hit", "miss"]
+    # verify_high off: >= HIGH skips the verifier
+    assert pipeline_decisions(ps[2:3], 0.8, 0.93, Always(False), verify_high=False)[0]["decision"] == "hit"
+
+
+def test_decisions_by_type_counts_false_hits_with_upper_bound():
+    ps = [pair("miss", "same_entity", 0.95)] * 3 + [pair("hit", "paraphrase", 0.95)]
+    r = decisions_by_type(pipeline_decisions(ps, 0.8, 0.93))
+    assert r["same_entity"]["hits"] == 3 and r["same_entity"]["false_hit_ci95_upper"] == 1.0
+    assert "false_hit_ci95_upper" not in r["paraphrase"]
+    assert r["all_miss_pairs"] == {"n": 3, "hits": 3, "false_hit_ci95_upper": 1.0}

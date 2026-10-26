@@ -102,3 +102,43 @@ def choose_low_verified(rows: list[dict]) -> float:
         raise ValueError("every LOW lets the verifier accept a wrong pair")
     best = max(r["hits_verified"] for r in ok)
     return max(r["low"] for r in ok if r["hits_verified"] == best)
+
+
+def pipeline_decisions(pairs: list[dict], low: float, high: float, verifier: Verifier | None = None,
+                       verify_high: bool = True) -> list[dict]:
+    """What the service would do if q2 were cached and q1 asked: `miss` (sim < LOW), `miss_entity` (guard),
+    `miss_verifier`, or `hit`. Pairs need `sim` and `guard_ok`. Without a verifier, the gray zone counts as a miss
+    (guard-only tier) and candidates >= HIGH are hits."""
+    out = []
+    for p in pairs:
+        if p["sim"] < low:
+            d = "miss"
+        elif not p["guard_ok"]:
+            d = "miss_entity"
+        elif verifier is None:
+            d = "hit" if p["sim"] >= high else "miss"
+        elif p["sim"] >= high and not verify_high:
+            d = "hit"
+        else:
+            d = "hit" if verifier.same_intent(p["q1"], p["q2"])[0] else "miss_verifier"
+        out.append({**p, "decision": d})
+    return out
+
+
+def decisions_by_type(decided: list[dict]) -> dict:
+    """Per pair type: n, hits, and for miss types the 95% upper bound of the false-hit rate (Wilson)."""
+    from scache.sweep import wilson
+
+    res = {}
+    for typ in dict.fromkeys(p["type"] for p in decided):
+        rows = [p for p in decided if p["type"] == typ]
+        hits = sum(p["decision"] == "hit" for p in rows)
+        r = {"n": len(rows), "hits": hits, "by_decision": {d: sum(p["decision"] == d for p in rows)
+                                                          for d in ("hit", "miss", "miss_entity", "miss_verifier")}}
+        if rows[0]["label"] == "miss":
+            r["false_hit_ci95_upper"] = wilson(hits, len(rows))[1]
+        res[typ] = r
+    miss = [p for p in decided if p["label"] == "miss"]
+    k = sum(p["decision"] == "hit" for p in miss)
+    res["all_miss_pairs"] = {"n": len(miss), "hits": k, "false_hit_ci95_upper": wilson(k, len(miss))[1] if miss else None}
+    return res
