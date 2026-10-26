@@ -1,0 +1,1238 @@
+{
+  "pairs": "eval/pairs_extra.jsonl",
+  "low": 0.8,
+  "high": 0.93,
+  "verify_high": true,
+  "verifier": "llm-judge:qwen2.5-7b-hf",
+  "model_digest": null,
+  "by_type": {
+    "paraphrase": {
+      "n": 30,
+      "hits": 18,
+      "by_decision": {
+        "hit": 18,
+        "miss": 8,
+        "miss_entity": 0,
+        "miss_verifier": 4
+      }
+    },
+    "different": {
+      "n": 30,
+      "hits": 0,
+      "by_decision": {
+        "hit": 0,
+        "miss": 13,
+        "miss_entity": 0,
+        "miss_verifier": 17
+      },
+      "false_hit_ci95_upper": 0.113517091390478
+    },
+    "near_miss": {
+      "n": 30,
+      "hits": 0,
+      "by_decision": {
+        "hit": 0,
+        "miss": 2,
+        "miss_entity": 28,
+        "miss_verifier": 0
+      },
+      "false_hit_ci95_upper": 0.113517091390478
+    },
+    "same_entity": {
+      "n": 30,
+      "hits": 0,
+      "by_decision": {
+        "hit": 0,
+        "miss": 8,
+        "miss_entity": 1,
+        "miss_verifier": 21
+      },
+      "false_hit_ci95_upper": 0.113517091390478
+    },
+    "all_miss_pairs": {
+      "n": 90,
+      "hits": 0,
+      "false_hit_ci95_upper": 0.04093706842168078
+    }
+  },
+  "decided": [
+    {
+      "id": "A2-par-01",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8816432952880859,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-02",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.6449387073516846,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-03",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.7624512314796448,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-04",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8548980951309204,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-05",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.7251700758934021,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-06",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.792553722858429,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-07",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8363329768180847,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-08",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8943061232566833,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-09",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8181031942367554,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-par-10",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8658499717712402,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-11",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.9730739593505859,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-12",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.7911069393157959,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-13",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8993395566940308,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-14",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.9314078092575073,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-15",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.7750829458236694,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-16",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8530354499816895,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-17",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.9217140674591064,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-18",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8812891840934753,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-19",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8732231855392456,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-20",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.9547399878501892,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-21",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8106255531311035,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-par-22",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.9527429342269897,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-23",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8439444303512573,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-par-24",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.9121659994125366,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-25",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8106625080108643,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-par-26",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.7919806838035583,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-27",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8297218084335327,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-28",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.882695198059082,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-29",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.8105517625808716,
+      "guard_ok": true,
+      "decision": "hit"
+    },
+    {
+      "id": "A2-par-30",
+      "type": "paraphrase",
+      "kind": null,
+      "label": "hit",
+      "sim": 0.7925798892974854,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-01",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7875319719314575,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-02",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7663019895553589,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-03",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.803307056427002,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-04",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8301602602005005,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-05",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8853727579116821,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-06",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8879317045211792,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-07",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7872653603553772,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-08",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8174936771392822,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-09",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8649818301200867,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-10",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7034647464752197,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-11",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7591990232467651,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-12",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7928022742271423,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-13",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.9037356972694397,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-14",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.6999722719192505,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-15",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8839913606643677,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-16",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8562712669372559,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-17",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7843762636184692,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-18",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8688143491744995,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-19",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7484939098358154,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-20",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7773451209068298,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-21",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8723578453063965,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-22",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7778195142745972,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-23",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7657544612884521,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-24",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.9192701578140259,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-25",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8151217103004456,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-26",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8668578863143921,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-27",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8621357083320618,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-28",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7426087260246277,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-dif-29",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8741807341575623,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-dif-30",
+      "type": "different",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8415441513061523,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-near-01",
+      "type": "near_miss",
+      "kind": "duration",
+      "label": "miss",
+      "sim": 0.931955873966217,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-02",
+      "type": "near_miss",
+      "kind": "amount",
+      "label": "miss",
+      "sim": 0.8769660592079163,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-03",
+      "type": "near_miss",
+      "kind": "time",
+      "label": "miss",
+      "sim": 0.9252336025238037,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-04",
+      "type": "near_miss",
+      "kind": "date",
+      "label": "miss",
+      "sim": 0.9189995527267456,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-05",
+      "type": "near_miss",
+      "kind": "product",
+      "label": "miss",
+      "sim": 0.7260364294052124,
+      "guard_ok": false,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-near-06",
+      "type": "near_miss",
+      "kind": "code",
+      "label": "miss",
+      "sim": 0.9369058012962341,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-07",
+      "type": "near_miss",
+      "kind": "number",
+      "label": "miss",
+      "sim": 0.9674687385559082,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-08",
+      "type": "near_miss",
+      "kind": "duration",
+      "label": "miss",
+      "sim": 0.9111652374267578,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-09",
+      "type": "near_miss",
+      "kind": "amount",
+      "label": "miss",
+      "sim": 0.8233624696731567,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-10",
+      "type": "near_miss",
+      "kind": "date",
+      "label": "miss",
+      "sim": 0.9370379447937012,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-11",
+      "type": "near_miss",
+      "kind": "duration",
+      "label": "miss",
+      "sim": 0.9286315441131592,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-12",
+      "type": "near_miss",
+      "kind": "product",
+      "label": "miss",
+      "sim": 0.9472155570983887,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-13",
+      "type": "near_miss",
+      "kind": "amount",
+      "label": "miss",
+      "sim": 0.9689750075340271,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-14",
+      "type": "near_miss",
+      "kind": "time",
+      "label": "miss",
+      "sim": 0.8901189565658569,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-15",
+      "type": "near_miss",
+      "kind": "duration",
+      "label": "miss",
+      "sim": 0.9126220941543579,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-16",
+      "type": "near_miss",
+      "kind": "amount",
+      "label": "miss",
+      "sim": 0.8283201456069946,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-17",
+      "type": "near_miss",
+      "kind": "code",
+      "label": "miss",
+      "sim": 0.9912223815917969,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-18",
+      "type": "near_miss",
+      "kind": "number",
+      "label": "miss",
+      "sim": 0.9253175854682922,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-19",
+      "type": "near_miss",
+      "kind": "date",
+      "label": "miss",
+      "sim": 0.8452450037002563,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-20",
+      "type": "near_miss",
+      "kind": "product",
+      "label": "miss",
+      "sim": 0.831566333770752,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-21",
+      "type": "near_miss",
+      "kind": "duration",
+      "label": "miss",
+      "sim": 0.9180051684379578,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-22",
+      "type": "near_miss",
+      "kind": "duration",
+      "label": "miss",
+      "sim": 0.9145233631134033,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-23",
+      "type": "near_miss",
+      "kind": "date",
+      "label": "miss",
+      "sim": 0.9284144639968872,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-24",
+      "type": "near_miss",
+      "kind": "amount",
+      "label": "miss",
+      "sim": 0.9055033922195435,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-25",
+      "type": "near_miss",
+      "kind": "product",
+      "label": "miss",
+      "sim": 0.7409002184867859,
+      "guard_ok": false,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-near-26",
+      "type": "near_miss",
+      "kind": "time",
+      "label": "miss",
+      "sim": 0.9294527769088745,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-27",
+      "type": "near_miss",
+      "kind": "number",
+      "label": "miss",
+      "sim": 0.9651618599891663,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-28",
+      "type": "near_miss",
+      "kind": "duration",
+      "label": "miss",
+      "sim": 0.9382407069206238,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-29",
+      "type": "near_miss",
+      "kind": "date",
+      "label": "miss",
+      "sim": 0.8518725633621216,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-near-30",
+      "type": "near_miss",
+      "kind": "product",
+      "label": "miss",
+      "sim": 0.8698383569717407,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-same-01",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.9360015988349915,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-02",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8465490341186523,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-03",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8711761236190796,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-04",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7555392980575562,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-same-05",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8465254306793213,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-06",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8365662097930908,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-07",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7990831136703491,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-same-08",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8402785658836365,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-09",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.9342741966247559,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-10",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8705413937568665,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-11",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8077429533004761,
+      "guard_ok": false,
+      "decision": "miss_entity"
+    },
+    {
+      "id": "A2-same-12",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.906010627746582,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-13",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8090527057647705,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-14",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.9466421604156494,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-15",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8234277963638306,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-16",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8763154149055481,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-17",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8004333972930908,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-18",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8094218373298645,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-19",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.9210571050643921,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-20",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7838441133499146,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-same-21",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.794357419013977,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-same-22",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7326831817626953,
+      "guard_ok": false,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-same-23",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.779196560382843,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-same-24",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7800416946411133,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-same-25",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8510659337043762,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-26",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8398854732513428,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-27",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.841887354850769,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-28",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.851956844329834,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-same-29",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.7874841690063477,
+      "guard_ok": true,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-same-30",
+      "type": "same_entity",
+      "kind": null,
+      "label": "miss",
+      "sim": 0.8988786339759827,
+      "guard_ok": true,
+      "decision": "miss_verifier"
+    }
+  ],
+  "wrong": [
+    {
+      "id": "A2-par-02",
+      "type": "paraphrase",
+      "q1": "Does Fernwick have a physical shop?",
+      "q2": "Is there a store I can walk into?",
+      "sim": 0.6449387073516846,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-03",
+      "type": "paraphrase",
+      "q1": "What address is the store at?",
+      "q2": "Where can I find your shop?",
+      "sim": 0.7624512314796448,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-05",
+      "type": "paraphrase",
+      "q1": "Do you take personal checks?",
+      "q2": "Can I pay by cheque?",
+      "sim": 0.7251700758934021,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-06",
+      "type": "paraphrase",
+      "q1": "What email do I write to for help?",
+      "q2": "Which address should I contact for support?",
+      "sim": 0.792553722858429,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-09",
+      "type": "paraphrase",
+      "q1": "Are defective items free to send back?",
+      "q2": "Do I pay postage to return something that arrived broken?",
+      "sim": 0.8181031942367554,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-par-12",
+      "type": "paraphrase",
+      "q1": "Does the warranty cover normal wear and tear?",
+      "q2": "Is everyday wear included in the warranty?",
+      "sim": 0.7911069393157959,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-15",
+      "type": "paraphrase",
+      "q1": "Do Trail Club members get early access to sales?",
+      "q2": "Can members shop sales before everyone else?",
+      "sim": 0.7750829458236694,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-21",
+      "type": "paraphrase",
+      "q1": "What payment methods does the store accept?",
+      "q2": "How can I pay when I shop in person?",
+      "sim": 0.8106255531311035,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-par-23",
+      "type": "paraphrase",
+      "q1": "How do I contact phone support?",
+      "q2": "What number do I call for help?",
+      "sim": 0.8439444303512573,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-par-25",
+      "type": "paraphrase",
+      "q1": "Who pays shipping on an exchange?",
+      "q2": "Is there a charge to exchange an item?",
+      "sim": 0.8106625080108643,
+      "decision": "miss_verifier"
+    },
+    {
+      "id": "A2-par-26",
+      "type": "paraphrase",
+      "q1": "Can I change my mind after ordering?",
+      "q2": "Is it possible to undo an order once placed?",
+      "sim": 0.7919806838035583,
+      "decision": "miss"
+    },
+    {
+      "id": "A2-par-30",
+      "type": "paraphrase",
+      "q1": "Is there a fee for paying by credit card?",
+      "q2": "Do you add a surcharge for card payments?",
+      "sim": 0.7925798892974854,
+      "decision": "miss"
+    }
+  ]
+}
