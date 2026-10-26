@@ -219,11 +219,10 @@ def test_guard_rejects_every_near_miss_pair_and_keeps_most_paraphrases():
     assert len([p for p in para if not entities_compatible(p["q1"], p["q2"])]) <= 2
 
 
-# ---- known gaps: the guard does not see these. strict xfail so a fix is noticed.
+# ---- former gaps (fixed 2026-10-27) and the one left: strict xfail so a fix is noticed.
 # (Not a gap: a family name vs a specific product is rejected, see the test above.)
 
-@pytest.mark.xfail(strict=True, reason="number words are only understood before a unit or 'dollars'")
-def test_gap_number_words_alone():
+def test_number_words_alone():
     assert not compat("Can I use two promo codes?", "Can I use three promo codes?")
 
 
@@ -231,9 +230,46 @@ def test_product_family_vs_specific_product_is_conservatively_incompatible():
     assert not compat("What is the Summit tent warranty?", "What is the warranty on the Summit Tent 4P?")
 
 
-@pytest.mark.xfail(strict=True, reason="abbreviated weekdays are not recognised")
-def test_gap_abbreviated_weekdays():
+def test_abbreviated_weekdays():
     assert not compat("Is the store open on Sat?", "Is the store open on Sun?")
+
+
+# Phrasings written after the fix and not taken from Set A, Set B or the tests above.
+@pytest.mark.parametrize("text,expected", [
+    ("Does the repair desk take walk-ins on Wed.?", {"day:wed"}),
+    ("Hours for Tues and Thurs", {"day:tue", "day:thu"}),
+    ("Is pickup possible Fri evening", {"day:fri"}),
+    ("Can a tent be shipped Mon morning?", {"day:mon"}),
+    ("I sat on the pack and the frame bent", set()),  # lower-case "sat" is a verb
+    ("Does the warranty cover sun damage?", set()),
+])
+def test_weekday_abbreviations(text, expected):
+    assert ents(text) == expected
+
+
+@pytest.mark.parametrize("text,expected", [
+    ("Is there a limit of four items per return?", {"num:4"}),
+    ("We bought twelve headlamps for a scout troop", {"num:12"}),
+    ("Which one is lighter?", set()),  # "one" is left out: mostly a pronoun
+    ("Can I send back eighty items?", set()),  # still outside the small word list
+])
+def test_count_words(text, expected):
+    assert ents(text) == expected
+
+
+@pytest.mark.parametrize("a,b", [
+    ("Do you give a discount if I order six sleeping bags?", "Do you give a discount if I order ten sleeping bags?"),
+    ("Can five gift cards go on a single purchase?", "Can eight gift cards go on a single purchase?"),
+    ("Is the repair counter staffed on Thu?", "Is the repair counter staffed on Fri?"),
+    ("Does curbside pickup run on Sat.?", "Does curbside pickup run on Sunday?"),
+])
+def test_new_phrasings_incompatible(a, b):
+    assert not compat(a, b)
+
+
+def test_abbreviation_and_full_weekday_name_match():
+    assert compat("Is the repair counter staffed on Thu?", "Is the repair counter staffed on Thursday?")
+    assert compat("Can I bring in four jackets for repair?", "Can I drop off 4 jackets for repair?")
 
 
 @pytest.mark.xfail(strict=True, reason="a different intent with no differing entity is not the guard's job")

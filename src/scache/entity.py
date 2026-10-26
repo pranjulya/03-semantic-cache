@@ -1,8 +1,8 @@
 """Entity guard (M4). Embeddings barely notice "$60" vs "$76" or "Pack 40L" vs "Pack 65L"; code does.
 
 extract_entities() returns normalised strings, one per entity mention, each prefixed by its type:
-  usd:80  pct:10  time:14:00  date:12-24  month:12  hol:thanksgiving  day:sun  range:weekday
-  dur:1440min / dur:5-7bday / dur:2year  id:SPRING10  prod:<policy product>  model:6p  tel:2075550142  num:250
+  usd:80  pct:10  time:14:00  date:12-24  month:12  hol:thanksgiving  day:sun (also Sun, Sat.)  range:weekday
+  dur:1440min / dur:5-7bday / dur:2year  id:SPRING10  prod:<policy product>  model:6p  tel:2075550142  num:250 (also "two")
 Two questions are compatible only if they mention exactly the same entities. This is deliberately strict: a
 paraphrase that words an entity differently ("Christmas Eve" vs "December 24" is handled, "a dozen" is not)
 loses a hit, which is cheaper than serving a wrong answer.
@@ -106,10 +106,14 @@ def extract_entities(text: str, products: dict[str, str] | None = None) -> set[s
     take(r"\b(" + "|".join(m for m in MONTHS if m != "may") + r")\b", lambda m: f"month:{MONTH_NUM[m[1].lower()]}")
     take(rf"\b({NUM})(?:\s*(?:to|-|–)\s*({NUM}))?[\s-]*{UNIT}\b", lambda m: _duration(m[1], m[2], m[3]))
     take(r"\b(mon|tues|wednes|thurs|fri|satur|sun)days?\b", lambda m: f"day:{m[1].lower()[:3]}")
+    # abbreviated weekdays only when capitalised, so "I sat" or "sun damage" stay plain words
+    take(r"\b(Mon|Tues?|Wed|Thu(?:rs?)?|Fri|Sat|Sun)\b\.?", lambda m: f"day:{m[1].lower()[:3]}", flags=0)
     take(r"\bweekdays?\b", lambda m: "range:weekday")
     take(r"\bweekends?\b", lambda m: "range:weekend")
     take(r"\b(\d+)(?!(?:st|nd|rd|th)\b)([a-z])\b", lambda m: f"model:{m[1]}{m[2].lower()}")
     take(rf"(?<![\w.])({DIGITS})(?![\w])", lambda m: f"num:{_fmt(_num(m[1]))}")
+    # a count word on its own ("two promo codes"); "one" is left out because it is mostly a pronoun ("which one")
+    take(r"\b(" + "|".join(w for w in NUMWORDS if w != "one") + r")\b", lambda m: f"num:{NUMWORDS[m[1].lower()]}")
     return out
 
 
