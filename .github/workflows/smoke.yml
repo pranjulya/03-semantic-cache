@@ -1,0 +1,37 @@
+name: smoke
+
+# The two smoke tests (tests/test_smoke.py) need the embedder and a live Ollama. They are too slow for every push,
+# so they run by hand, weekly, and when this file changes. The offline suite stays in tests.yml.
+# CI uses qwen2.5:3b (the 8 GB tier, ~2 GB download) on a CPU runner: it checks that the stack runs end to end,
+# not the 7B numbers in DECISION_LOG.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"
+  push:
+    paths: [".github/workflows/smoke.yml"]
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      SCACHE_LLM_TAG: qwen2.5:3b
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.3.0
+      - name: Install dependencies
+        run: uv sync --frozen
+      - name: Install and start Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          (ollama serve > /tmp/ollama.log 2>&1 &)
+          for i in $(seq 1 30); do curl -sf http://localhost:11434/api/tags >/dev/null && break; sleep 1; done
+          ollama pull "$SCACHE_LLM_TAG"
+      - name: Cache the embedder
+        run: HF_HUB_OFFLINE=0 uv run --frozen python -c "from sentence_transformers import SentenceTransformer; from scache.config import settings; SentenceTransformer(settings.embed_model)"
+      - name: Run smoke tests
+        run: HF_HUB_OFFLINE=1 uv run --frozen pytest -q -s -m smoke
+      - name: Ollama log on failure
+        if: failure()
+        run: tail -n 100 /tmp/ollama.log
