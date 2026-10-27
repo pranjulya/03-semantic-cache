@@ -2,6 +2,8 @@
 
 # Honest Semantic Cache
 
+[![tests](https://github.com/pranjulya/03-semantic-cache/actions/workflows/tests.yml/badge.svg)](https://github.com/pranjulya/03-semantic-cache/actions/workflows/tests.yml)
+
 **A local semantic cache for an LLM support assistant, evaluated on whether it serves wrong answers, not just how fast it is.**
 
 Python 3.11+ · FastAPI · Chroma · Ollama · 100% local at run time · 342 tests · MIT license
