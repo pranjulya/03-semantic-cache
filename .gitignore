@@ -5,3 +5,4 @@ cache/
 logs/
 out/
 .DS_Store
+docs/IMPLEMENTATION_PLAN.md

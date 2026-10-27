@@ -4,7 +4,7 @@
 
 **A local semantic cache for an LLM support assistant, evaluated on whether it serves wrong answers, not just how fast it is.**
 
-Python 3.11+ · FastAPI · Chroma · Ollama · 100% local at run time · 342 tests
+Python 3.11+ · FastAPI · Chroma · Ollama · 100% local at run time · 342 tests · MIT license
 
 </div>
 
@@ -153,8 +153,13 @@ eval/          labelled sets (pairs, traffic 10/30/60, staleness, security, answ
 docs/          PRD, HLD, LLD, evaluation plan, decision log
 scripts/       setup, model download, eval-set generation
 report/        generated tables and charts
+AGENTS.md      rules for AI coding agents working in this repo (CLAUDE.md points to it)
 tests/         342 tests; test_offline.py enforces "no network except local Ollama"
 ```
 
 Design truth is [`docs/LLD.md`](docs/LLD.md). Every threshold and trade-off has a dated entry in
 [`docs/DECISION_LOG.md`](docs/DECISION_LOG.md).
+
+## License
+
+[MIT](LICENSE).

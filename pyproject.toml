@@ -3,6 +3,8 @@ name = "scache"
 version = "0.1.0"
 description = "A local semantic cache for an LLM support assistant, evaluated on false hits, staleness and poisoning."
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 keywords = ["semantic-cache", "llm", "rag", "evaluation", "ollama", "fastapi"]
 requires-python = ">=3.11"
 dependencies = [
