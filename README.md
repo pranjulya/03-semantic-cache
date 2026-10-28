@@ -103,8 +103,10 @@ curl -s localhost:8000/ask -H 'content-type: application/json' \
 | `POST /admin/invalidate` | Delete cached questions similar to a topic. Returns the deleted count and `guaranteed: false` |
 | `GET /stats` | Hit rate, latency by decision, why answers were not stored, estimated LLM seconds avoided |
 
-**8 GB machines:** `SCACHE_LLM_TAG=qwen2.5:3b scripts/setup.sh`. The 3B model is not a useful judge (8 of 28 true
-paraphrases accepted, against 25 for the 7B), so run it with the entity guard only.
+**8 GB machines:** run `export SCACHE_LLM_TAG=qwen2.5:3b` in the shell first, then the commands above. The variable
+must stay set for `demo` and `uvicorn` too, otherwise they ask Ollama for the 7B model that setup did not pull. The 3B
+model is not a useful judge (8 of 28 true paraphrases accepted, against 25 for the 7B), but `demo` and the API always
+use the judge; an entity-guard-only cache is available only through `cli replay --mode semantic` without `--verifier`.
 
 ## Commands
 
