@@ -3,10 +3,14 @@
 # Honest Semantic Cache
 
 [![tests](https://github.com/pranjulya/03-semantic-cache/actions/workflows/tests.yml/badge.svg)](https://github.com/pranjulya/03-semantic-cache/actions/workflows/tests.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)
 
 **A local semantic cache for an LLM support assistant, evaluated on whether it serves wrong answers, not just how fast it is.**
 
-Python 3.11+ · FastAPI · Chroma · Ollama · 100% local at run time · 342 tests · MIT license
+FastAPI · Chroma · Ollama · fully local at run time · 342 offline tests
+
+[Why](#why-this-project-exists) · [How it works](#how-it-works) · [Results](#results) · [Quick start](#quick-start) · [Configuration](#configuration) · [Reproduce](#reproduce-the-evaluation) · [Limitations](#limitations)
 
 </div>
 
@@ -108,7 +112,26 @@ must stay set for `demo` and `uvicorn` too, otherwise they ask Ollama for the 7B
 model is not a useful judge (8 of 28 true paraphrases accepted, against 25 for the 7B), but `demo` and the API always
 use the judge; an entity-guard-only cache is available only through `cli replay --mode semantic` without `--verifier`.
 
-## Commands
+## Configuration
+
+Settings are read from environment variables with the `SCACHE_` prefix (`src/scache/config.py`). The ones you are most
+likely to change:
+
+| Variable | Default | Meaning |
+|---|---|---|
+| `SCACHE_LLM_TAG` | `qwen2.5:7b` | Ollama model for answers and the judge (`qwen2.5:3b` on 8 GB machines) |
+| `SCACHE_OLLAMA_URL` | `http://localhost:11434` | Local Ollama endpoint |
+| `SCACHE_EMBED_MODEL` | `BAAI/bge-small-en-v1.5` | Embedder; run `cli clear` after changing it |
+| `SCACHE_HIGH` / `SCACHE_LOW` | `0.93` / `0.80` | Similarity thresholds from the calibration split |
+| `SCACHE_TTL_S` | `86400` | Entry lifetime in seconds (24 h) |
+| `SCACHE_POLICY_VERSION` | `v1` | Bump after a policy change; older entries are never served |
+| `SCACHE_ADMIN_TOKEN` | unset | If set, `/admin/invalidate` requires header `X-Admin-Token` |
+| `SCACHE_CACHE_DIR` / `SCACHE_LOG_DB` | `cache` / `logs/requests.sqlite` | Vector store and request log locations |
+
+Thresholds are evaluation results, not tuning knobs: change them only with a new entry in
+[`docs/DECISION_LOG.md`](docs/DECISION_LOG.md).
+
+## Reproduce the evaluation
 
 ```bash
 uv run pytest -q -m "not smoke"       # 342 tests, no Ollama needed
@@ -120,7 +143,8 @@ uv run python -m scache.cli security   # personal and poisoning checks
 uv run python -m scache.cli report     # rebuild report/ from saved runs
 ```
 
-Each command has `--help`. `make help` lists the shortcuts.
+Each command has `--help`; `uv run python -m scache.cli --help` lists all ten (including `ask`, `promptcheck`,
+`invalidate-demo` and `clear`). `make help` lists the shortcuts. CI runs the offline suite on every push and pull request.
 
 ## One failure, in full
 
@@ -166,4 +190,4 @@ Design truth is [`docs/LLD.md`](docs/LLD.md). Every threshold and trade-off has 
 
 ## License
 
-[MIT](LICENSE).
+[MIT](LICENSE) © 2026 Pranjulya Bajpai.
