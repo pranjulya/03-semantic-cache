@@ -90,3 +90,21 @@ def test_stats_empty(tmp_path):
     s = c.get("/stats").json()
     assert s["requests"] == 0 and s["hit_rate"] is None and s["llm_seconds_avoided_estimate"] == 0.0
 
+
+def test_ask_rejects_whitespace_question(tmp_path):
+    c, _ = make_app(tmp_path)
+    assert c.post("/ask", json={"question": "   "}).status_code == 422
+    assert c.post("/ask", json={"question": "\n\t"}).status_code == 422
+
+
+def test_ask_rejects_blank_tenant(tmp_path):
+    c, _ = make_app(tmp_path)
+    assert c.post("/ask", json={"question": QA, "tenant": "   "}).status_code == 422
+    assert c.post("/ask", json={"question": QA, "tenant": ""}).status_code == 422
+
+
+def test_invalidate_rejects_blank_topic_or_tenant(tmp_path):
+    c, _ = make_app(tmp_path)
+    assert c.post("/admin/invalidate", json={"topic": "   "}).status_code == 422
+    assert c.post("/admin/invalidate", json={"topic": QA, "tenant": "   "}).status_code == 422
+    assert c.post("/admin/invalidate", json={"topic": QA, "tenant": ""}).status_code == 422

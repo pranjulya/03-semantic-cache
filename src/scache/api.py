@@ -4,7 +4,7 @@ import threading
 from collections.abc import Callable
 
 from fastapi import FastAPI, Header, HTTPException
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 from scache.cache import SemanticCache
 from scache.config import Settings, settings as default_settings
@@ -15,9 +15,26 @@ from scache.service import Service
 API_RUN_ID = "api"
 
 
+def _require_non_blank(value: str) -> str:
+    """Reject whitespace-only strings that would otherwise pass min_length=1."""
+    if not value.strip():
+        raise ValueError("must not be blank")
+    return value
+
+
 class AskIn(BaseModel):
     question: str = Field(min_length=1, max_length=2000)
     tenant: str | None = None
+
+    @field_validator("question")
+    @classmethod
+    def question_not_blank(cls, value: str) -> str:
+        return _require_non_blank(value)
+
+    @field_validator("tenant")
+    @classmethod
+    def tenant_not_blank(cls, value: str | None) -> str | None:
+        return None if value is None else _require_non_blank(value)
 
 
 class AskOut(BaseModel):
@@ -33,6 +50,16 @@ class InvalidateIn(BaseModel):
     topic: str = Field(min_length=1, max_length=500)
     min_sim: float | None = Field(default=None, gt=0, le=1)
     tenant: str | None = None
+
+    @field_validator("topic")
+    @classmethod
+    def topic_not_blank(cls, value: str) -> str:
+        return _require_non_blank(value)
+
+    @field_validator("tenant")
+    @classmethod
+    def tenant_not_blank(cls, value: str | None) -> str | None:
+        return None if value is None else _require_non_blank(value)
 
 
 class InvalidateOut(BaseModel):
