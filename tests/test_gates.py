@@ -11,6 +11,8 @@ POLICY = "Returns are accepted within 30 days. Standard shipping is $6 and takes
     "Call me back on 207-555-0187 about the refund.",
     "Can you check my account balance?",
     "Has order FO-310022 shipped yet?",
+    "where is order fo-482913",
+    "has fo-310022 shipped yet",
     "Where is my package?",
     "what is the status of my refund",
     "Can you resend our invoice?",
@@ -32,6 +34,8 @@ def test_personal_questions(q):
     "When will the money get back to my card after a return?",
     "How much does it cost to ship $120 of goods?",
     "Call support at the number on the website",
+    "Does the Trailhead Pack meet ISO-27001 or sha-256 requirements?",
+    "Is the TP-40 pack in stock?",
 ])
 def test_general_questions_are_not_personal(q):
     assert not is_personal(q)

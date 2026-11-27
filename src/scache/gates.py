@@ -11,7 +11,7 @@ from scache.llm import NOT_FOUND
 MAX_ANSWER_CHARS = 600  # the longest answer to a real policy question in the M1 runs is far below this
 
 _PERSONAL = [
-    re.compile(r"\b[A-Z]{2}-\d{5,}\b"),  # order numbers: FO-123456
+    re.compile(r"\b[A-Z]{2}-\d{5,}\b", re.I),  # order numbers: FO-123456, also typed as fo-123456
     re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+"),  # e-mail address
     re.compile(r"(?<![\d$])\+?\d(?:[\s().-]?\d){9,14}(?!\d)"),  # phone number or card number: 10-15 digits
     re.compile(r"\b(?:my|our)\s+(?:\w+\s+)?(?:orders?|accounts?|packages?|parcels?|shipments?|purchases?|receipts?|"
